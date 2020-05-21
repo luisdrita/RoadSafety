@@ -1,5 +1,5 @@
 # Road Safety for Cyclists in London
-[Jupyter Notebook](https://warcraft12321.github.io/RoadSafety) | [Report](https://github.com/warcraft12321/RoadSafety/text/report.pdf) | [Presentation](https://github.com/warcraft12321/RoadSafety/text/presentation.pdf)
+[Jupyter Notebook](https://warcraft12321.github.io/RoadSafety) | [Report](https://github.com/warcraft12321/RoadSafety/blob/master/text/report.pdf) | [Presentation](https://github.com/warcraft12321/RoadSafety/blob/master/text/presentation.pdf)
 
 ### Aim
 
