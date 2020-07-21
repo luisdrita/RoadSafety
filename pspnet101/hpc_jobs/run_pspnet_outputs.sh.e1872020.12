@@ -1,0 +1,44 @@
+/var/spool/PBS/mom_priv/jobs/1872020[12].pbs.SC: line 7: cd: pspnet101: No such file or directory
+WARNING:tensorflow:From /rds/general/user/lr3118/home/anaconda3/envs/tensorflowgpu/lib/python3.8/site-packages/tensorflow/python/compat/v2_compat.py:96: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+sys:1: DtypeWarning: Columns (55) have mixed types.Specify dtype option on import or set low_memory=False.
+WARNING:tensorflow:From /rds/general/user/lr3118/home/pspnet101/network.py:254: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.BatchNormalization` documentation).
+WARNING:tensorflow:From /rds/general/user/lr3118/home/anaconda3/envs/tensorflowgpu/lib/python3.8/site-packages/tensorflow/python/layers/normalization.py:336: Layer.apply (from tensorflow.python.keras.engine.base_layer_v1) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /rds/general/user/lr3118/home/anaconda3/envs/tensorflowgpu/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+2020-07-16 02:14:40.933327: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-07-16 02:14:40.955236: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2400075000 Hz
+2020-07-16 02:14:40.958102: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ffe2430e90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-16 02:14:40.958125: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-07-16 02:14:40.959346: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-07-16 02:14:41.010156: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: Tesla P100-PCIE-16GB computeCapability: 6.0
+coreClock: 1.3285GHz coreCount: 56 deviceMemorySize: 15.90GiB deviceMemoryBandwidth: 681.88GiB/s
+2020-07-16 02:14:41.012065: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-07-16 02:14:41.017754: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-07-16 02:14:41.021008: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2020-07-16 02:14:41.023019: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2020-07-16 02:14:41.027166: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2020-07-16 02:14:41.029598: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2020-07-16 02:14:41.036362: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 02:14:41.039684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2020-07-16 02:14:41.039733: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2020-07-16 02:14:41.155817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 02:14:41.155891: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2020-07-16 02:14:41.155898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2020-07-16 02:14:41.160838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15056 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:04:00.0, compute capability: 6.0)
+2020-07-16 02:14:41.163228: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ffea0cd6b0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-07-16 02:14:41.163248: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla P100-PCIE-16GB, Compute Capability 6.0
+2020-07-16 02:14:46.213465: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2020-07-16 02:14:46.398871: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 02:14:47.153266: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2020-07-16 02:14:47.207764: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
