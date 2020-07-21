@@ -28,6 +28,10 @@ over 6 categories ().
 
 --------------------------- Image Examples ---------------------------
 
+Original Image            |  YOLOv5
+:-------------------------:|:-------------------------:
+![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a_processed.png)
+
 <img id = "img" src="./img/london_segmented.png" alt="London StreetView Imagery Segmented">
 
 [(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing)
@@ -48,9 +52,9 @@ categories.
 
 <img id = "img" src="./img/london_segmented.png" alt="London StreetView Imagery Segmented">
 
-Solarized dark             |  Solarized Ocean
+Original Image            |  PSPNet101
 :-------------------------:|:-------------------------:
-![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a.png)
+![](./img/pspnet101/8_a.png)  |  ![](./img/pspnet101/8_a_processed.png)
 
 [Click to See 1 Image per LSOA](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing)
 
