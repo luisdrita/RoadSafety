@@ -5,11 +5,11 @@
 
 The aim of this project was to use imagery to estimate safety on the roads of London, from a cyclist’s perspective. After
 a brief introduction to the most important road safety indicators, a ranked list with several risk factors was compiled.
-Risk factors were obtained from Google StreetView imagery dataset using the object detection YOLOv5 (released on the ___ by ___) and
-image segmentation PSPNet101 (released on the ___ by ___).
+Risk factors were obtained from Google StreetView imagery dataset using the object detection YOLOv5 (released in June 2020 by Glenn Jocher) and
+image segmentation PSPNet101 (Pyramid Scene Parsing Network) (released in July 2017 by Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang and Jiaya Jia).
 
-Imagery dataset contains 512 000 images of greater London, distributed across 1400 boroughs. Each image is labeled in accordance
-to the LSOA it belongs. Images are organized in sets of 4 which corresponds to 4 90º angles from a total of 125 000 points.
+Imagery dataset contains 518 350 images of greater London, distributed across 4833 boroughs. Each image is labeled in accordance
+to the LSOA it belongs. Images are organized in sets of 4 which corresponds to 4 90º angles from a total of 129 588 points.
 
 Both YOLOv5 and PSPNet101 were benchmarked and validated using a set of 1 image per LSOA from the dataset.
 
@@ -23,16 +23,12 @@ called Darknet which was built specifically to execute YOLO.
 Version 5 is only the 2nd model which was not developed by Joseph Redmon (after version 4) and the first running in the
 state-of-the-art machine learning framework PyTorch.
 
-This model was pre-trained using Coco dataset. Thus, it was able to identify 30 different classes of objects. Distributed
-over 6 categories ().
+This model was pre-trained using Coco dataset. Thus, it was able to identify 80 object categories. Distributed
+over 11 categories.
 
---------------------------- Image Examples ---------------------------
-
-Original Image            |  YOLOv5
+Original            |  YOLOv5
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a_processed.png)
-
-<img id = "img" src="./img/london_segmented.png" alt="London StreetView Imagery Segmented">
 
 [(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing)
 
@@ -48,15 +44,11 @@ long execution times, it was chosen the model executing faster and with the high
 PSPNet101 was pre-trained in Cityscapes dataset. This way, it was able to label all pixels from an image across 100
 categories.
 
---------------------------- Image Examples ---------------------------
-
-<img id = "img" src="./img/london_segmented.png" alt="London StreetView Imagery Segmented">
-
-Original Image            |  PSPNet101
+Original            |  PSPNet101
 :-------------------------:|:-------------------------:
 ![](./img/pspnet101/8_a.png)  |  ![](./img/pspnet101/8_a_processed.png)
 
-[Click to See 1 Image per LSOA](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing)
+[(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing)
 
 --------------------------- Stats ---------------------------
 
