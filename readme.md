@@ -38,8 +38,8 @@ Original            |  YOLOv5
 
 File            |  Description
 :-------------------------:|:-------------------------:
-[total_stats.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/total_stats) |  Number of objects detected by YOLOv5 in GSV imagery by class
-[lsoa_objects_number.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number) |  Number of objects detected by YOLOv5 in GSV imagery by class and LSOA
+[total_stats.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/total_stats.json) |  Number of objects detected by YOLOv5 in GSV imagery by class
+[lsoa_objects_number.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number.json) |  Number of objects detected by YOLOv5 in GSV imagery by class and LSOA
 
 [YOLOv5](https://github.com/ultralytics/yolov5)
 
@@ -63,7 +63,7 @@ Original            |  PSPNet101
 
 File            |  Description
 :-------------------------:|:-------------------------:
-[total_stats.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/total_stats) |  Total Number of Pixels per Cityscapes Label in GSV Dataset
+[total_stats.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/total_stats.json) |  Total Number of Pixels per Cityscapes Label in GSV Dataset
 [rgb_label.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/rgb_label) |  Conversion from RGB values to a Cityscapes label
 
 [PSPNet101](https://github.com/hellochick/PSPNet-tensorflow)
