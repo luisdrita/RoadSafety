@@ -5,7 +5,7 @@
 
 The aim of this project was to use imagery to estimate safety on the roads of London, from a cyclist’s perspective. After
 a brief introduction to the most important road safety indicators, a ranked list with several risk factors was compiled.
-Risk factors were obtained from Google StreetView imagery dataset using the object detection YOLOv5 (released in June 2020 by Glenn Jocher) and
+Risk factors were obtained from Google StreetView (GSV) imagery dataset using the object detection YOLOv5 (released in June 2020 by Glenn Jocher) and
 image segmentation PSPNet101 (Pyramid Scene Parsing Network) (released in July 2017 by Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang and Jiaya Jia).
 
 Imagery dataset contains 518 350 images of greater London, distributed across 4833 boroughs. Each image is labeled in accordance
@@ -34,6 +34,13 @@ Original            |  YOLOv5
 
 --------------------------- Stats ---------------------------
 
+--------------------------- Files ---------------------------
+
+File            |  Description
+:-------------------------:|:-------------------------:
+[total_stats](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/total_stats.json) |  Total Number of Objects detected by YOLOv5 in GSV imagery
+[lsoa_objects_number](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number.json) |  Total Number of Objects detected by YOLOv5 in GSV imagery per LSOA
+
 [YOLOv5](https://github.com/ultralytics/yolov5)
 
 ### Image Segmentation
@@ -51,6 +58,13 @@ Original            |  PSPNet101
 [(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing)
 
 --------------------------- Stats ---------------------------
+
+--------------------------- Files ---------------------------
+
+File            |  Description
+:-------------------------:|:-------------------------:
+[total_stats](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/total_stats.json) |  Total Number of Pixels per Cityscapes Label in GSV Dataset
+[rgb_label](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/rgb_label.json) |  Conversion from RGB values to a Cityscapes label
 
 [PSPNet101](https://github.com/hellochick/PSPNet-tensorflow)
 
