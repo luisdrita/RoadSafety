@@ -33,7 +33,7 @@ over 11 categories.
   <summary>COCO Categories</summary>
 
 Person | Vehicle | Outdoor | Animal | Accessory | Sports | Kitchen | Food | Furniture | Electronic | Appliance | Indoor
-:-------------------------:|:-------------------------:
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Car | Chair | Tv | Microwave | Book
  | Car | Fire Hydrant | Cat | Umbrella | Skis | Wine Glass | Truck | Couch | Laptop | Oven | Clock
  | Motorcycle | Stop Sign | Dog | Handbag | Snowboard | Cup | Bus | Potted Plant | Mouse | Toaster | Vase
@@ -98,7 +98,7 @@ categories.
   <summary>Cityscapes Categories</summary>
 
 Void | Flat | Construction | Object | Nature | Sky | Human | Vehicle
-:-------------------------:|:-------------------------:
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 Unlabeled | Road | Building | Pole | Vegetation | Sky | Person | Car
 Ego Vehicle | Sidewalk | Wall | Polegroup | Terrain |  | Rider | Truck
 Rectification Border | Parking | Fence | Traffic Light |  |  |  | Bus
