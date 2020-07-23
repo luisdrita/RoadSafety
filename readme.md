@@ -34,6 +34,30 @@ Original            |  YOLOv5
 
 --------------------------- Stats ---------------------------
 
+![](./img/yolov5/stats.png)
+
+<details>
+
+  <summary>
+
+  Original            |  YOLOv5
+  :-------------------------:|:-------------------------:
+  Car  |  1509344
+  Person  |  107266
+  Truck  |  70083
+  Potted Plant  |  37917
+
+  </summary>
+
+Original            |  YOLOv5
+:-------------------------:|:-------------------------:
+Car  |  1509344
+Person  |  107266
+Truck  |  70083
+Potted Plant  |  37917
+
+</details>
+
 --------------------------- Files ---------------------------
 
 File            |  Description
@@ -67,8 +91,6 @@ File            |  Description
 [rgb_label.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/rgb_label) |  Conversion from RGB values to a Cityscapes label
 
 [PSPNet101](https://github.com/hellochick/PSPNet-tensorflow)
-
-### Results
 
 ### Supervisors
 [Majid Ezzati](https://www.imperial.ac.uk/people/majid.ezzati) (Imperial College London) | [Ricky Nathvani](https://www.imperial.ac.uk/people/r.nathvani) (Imperial College London)
