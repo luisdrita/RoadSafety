@@ -50,12 +50,6 @@ Original            |  YOLOv5
 
   </summary>
 
-Original            |  YOLOv5
-:-------------------------:|:-------------------------:
-Car  |  1509344
-Person  |  107266
-Truck  |  70083
-Potted Plant  |  37917
 Bus  |  11512
 Bicycle  |  10894
 Motorcycle  |  8970
