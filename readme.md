@@ -40,7 +40,7 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Car | Ch
  | Truck |  | Elephant |  | Baseball Glove | Bowl | Motorcycle | | | | Toothbrush
  | Boat |  | Bear |  | Skateboard | Banana | Bicycle | | | |
  |  |  | Zebra |  | Surfboard | Apple | License Plate | | | |
- |  |  | Giraffe |  | Tennis Racket | Sandwich | License Plate | | | |
+ |  |  | Giraffe |  | Tennis Racket | Sandwich | | | | |
  |  |  |  |  | Tennis Racket | Orange | | | | |
  |  |  |  |  |  | Broccoli | | | | |
  |  |  |  |  |  | Carrot | | | | |
@@ -101,8 +101,8 @@ Out of ROI | Road | Guard Rail | Traffic Sign |  |  |  | Caravan
 Static |  | Bridge |  |  |  |  | Trailer
 Dynamic |  | Tunnel |  |  |  |  | Train
 Ground |  |  |  |  |  |  | Motorcycle
-Ground |  |  |  |  |  |  | Bicycle
-Ground |  |  |  |  |  |  | License Plate
+  |  |  |  |  |  |  | Bicycle
+  |  |  |  |  |  |  | License Plate
 
 </details>
 
