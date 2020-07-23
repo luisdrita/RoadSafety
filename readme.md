@@ -27,9 +27,6 @@ This model was pre-trained using Coco dataset. Thus, it is able to identify 80 o
 over 11 categories.
 
 <details>
-  <summary>YOLOv5 Object Categories</summary>
-
-<details>
   <summary>COCO Categories</summary>
 
 Person | Vehicle | Outdoor | Animal | Accessory | Sports | Kitchen | Food | Furniture | Electronic | Appliance | Indoor
@@ -52,8 +49,6 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Car | Ch
  |  |  |  |  |  | Donut | | | | |
  |  |  |  |  |  | Cake | | | | |
 
-
-</details>
 
 </details>
 
