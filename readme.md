@@ -32,19 +32,20 @@ Original            |  YOLOv5
 
 [(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing)
 
---------------------------- Stats ---------------------------
+#### Stats
 
 ![](./img/yolov5/stats.png)
 
 <details>
 
-  <summary>
+  <summary> Click to Expand Table
 
   Original            |  YOLOv5
   :-------------------------:|:-------------------------:
   Car  |  1509344
   Person  |  107266
   Truck  |  70083
+  Others  |  61624
   Potted Plant  |  37917
 
   </summary>
@@ -55,10 +56,16 @@ Car  |  1509344
 Person  |  107266
 Truck  |  70083
 Potted Plant  |  37917
+Bus  |  11512
+Bicycle  |  10894
+Motorcycle  |  8970
+Traffic Light  |  6310
+Bench  |  5013
+Clock  |  2750
 
 </details>
 
---------------------------- Files ---------------------------
+#### Files
 
 File            |  Description
 :-------------------------:|:-------------------------:
@@ -81,9 +88,9 @@ Original            |  PSPNet101
 
 [(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing)
 
---------------------------- Stats ---------------------------
+#### Stats
 
---------------------------- Files ---------------------------
+#### Files
 
 File            |  Description
 :-------------------------:|:-------------------------:
