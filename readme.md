@@ -34,16 +34,17 @@ Original            |  YOLOv5
 
 #### Stats
 
-![](./img/yolov5/stats.png)
+![](./img/yolov5/stats.png=500x)
 
-Object            |  Number Occurrences | Object            |  Number Occurrences
+Object            |  Number Occurrences | Object            |  Number Occurrences | Object            |  Number Occurrences
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Car  |  1509344 | Bicycle  |  10894
-Person  |  107266 | Motorcycle  |  8970
-Truck  |  70083 | Traffic Light  |  6310
-Potted Plant  |  37917 | Bench  |  5013
-Bus  |  11512 | Clock  |  2750
+Car  |  1509344 | Bicycle  |  10894 | Chair  |  2191
+Person  |  107266 | Motorcycle  |  8970 | Handbag  |  2090
+Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
+Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
+Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 
+![](./img/yolov5/lsoa.png=250x)
 
 #### Files
 
