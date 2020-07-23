@@ -6,25 +6,56 @@
 The aim of this project was to use imagery to estimate safety on the roads of London, from a cyclist’s perspective. After
 a brief introduction to the most important road safety indicators, a ranked list with several risk factors was compiled.
 Risk factors were obtained from Google StreetView (GSV) imagery dataset using the object detection YOLOv5 (released in June 2020 by Glenn Jocher) and
-image segmentation PSPNet101 (Pyramid Scene Parsing Network) (released in July 2017 by Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang and Jiaya Jia).
+image segmentation PSPNet101 (Pyramid Scene Parsing Network) (released in July 2017 by Hengshuang Zhao et al.).
 
 Imagery dataset contains 518 350 images of greater London, distributed across 4833 boroughs. Each image is labeled in accordance
 to the LSOA it belongs. Images are organized in sets of 4 which corresponds to 4 90º angles from a total of 129 588 points.
 
 Both YOLOv5 and PSPNet101 were benchmarked and validated using a set of 1 image per LSOA from the dataset.
 
-Data was storage and processed in the secure High Performance Cluster from Imperial College London.
-
+Data was storaged and processed in the secure High Performance Cluster from Imperial College London.
 
 ### Object Detection
-YOLOv5 is the most recent version of YOLO which was originally developed by Joseph Redmon. First version runs in framework
-called Darknet which was built specifically to execute YOLO.
 
-Version 5 is only the 2nd model which was not developed by Joseph Redmon (after version 4) and the first running in the
+YOLOv5 is the most recent version of YOLO which was originally developed by Joseph Redmon. First version runs in framework
+called Darknet which was purposely built to execute YOLO.
+
+Version 5 is the 2nd model which was not developed by Joseph Redmon (after version 4) and the first running in the
 state-of-the-art machine learning framework PyTorch.
 
-This model was pre-trained using Coco dataset. Thus, it was able to identify 80 object categories. Distributed
+This model was pre-trained using Coco dataset. Thus, it is able to identify 80 object categories. Distributed
 over 11 categories.
+
+<details>
+  <summary>YOLOv5 Object Categories</summary>
+
+<details>
+  <summary>COCO Categories</summary>
+
+Person | Vehicle | Outdoor | Animal | Accessory | Sports | Kitchen | Food | Furniture | Electronic | Appliance | Indoor
+:-------------------------:|:-------------------------:
+Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Car | Chair | Tv | Microwave | Book
+ | Car | Fire Hydrant | Cat | Umbrella | Skis | Wine Glass | Truck | Couch | Laptop | Oven | Clock
+ | Motorcycle | Stop Sign | Dog | Handbag | Snowboard | Cup | Bus | Potted Plant | Mouse | Toaster | Vase
+ | Airplane | Parking Meter | Horse | Tie | Sports Ball | Fork | Caravan | Bed | Remote | Sink | Scissors
+ | Bus | Bench | Sheep | Suitcase | Kite | Knife | Trailer | Dinning Table | Keyboard | Refrigerator | Teddy Bear
+ | Train |  | Cow |  | Baseball Bat | Spoon | Train | Toilet | Cell Phone | | Hair Drier
+ | Truck |  | Elephant |  | Baseball Glove | Bowl | Motorcycle | | | | Toothbrush
+ | Boat |  | Bear |  | Skateboard | Banana | Bicycle | | | |
+ |  |  | Zebra |  | Surfboard | Apple | License Plate | | | |
+ |  |  | Giraffe |  | Tennis Racket | Sandwich | License Plate | | | |
+ |  |  |  |  | Tennis Racket | Orange | | | | |
+ |  |  |  |  |  | Broccoli | | | | |
+ |  |  |  |  |  | Carrot | | | | |
+ |  |  |  |  |  | Hot dog | | | | |
+ |  |  |  |  |  | Pizza | | | | |
+ |  |  |  |  |  | Donut | | | | |
+ |  |  |  |  |  | Cake | | | | |
+
+
+</details>
+
+</details>
 
 Original            |  YOLOv5
 :-------------------------:|:-------------------------:
@@ -62,6 +93,23 @@ long execution times, it was chosen the model executing faster and with the high
 
 PSPNet101 was pre-trained in Cityscapes dataset. This way, it was able to label all pixels from an image across 100
 categories.
+
+<details>
+  <summary>Cityscapes Categories</summary>
+
+Void | Flat | Construction | Object | Nature | Sky | Human | Vehicle
+:-------------------------:|:-------------------------:
+Unlabeled | Road | Building | Pole | Vegetation | Sky | Person | Car
+Ego Vehicle | Sidewalk | Wall | Polegroup | Terrain |  | Rider | Truck
+Rectification Border | Parking | Fence | Traffic Light |  |  |  | Bus
+Out of ROI | Road | Guard Rail | Traffic Sign |  |  |  | Caravan
+Static |  | Bridge |  |  |  |  | Trailer
+Dynamic |  | Tunnel |  |  |  |  | Train
+Ground |  |  |  |  |  |  | Motorcycle
+Ground |  |  |  |  |  |  | Bicycle
+Ground |  |  |  |  |  |  | License Plate
+
+</details>
 
 Original            |  PSPNet101
 :-------------------------:|:-------------------------:
