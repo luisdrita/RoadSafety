@@ -101,8 +101,8 @@ Out of ROI | Road | Guard Rail | Traffic Sign |  |  |  | Caravan
 Static |  | Bridge |  |  |  |  | Trailer
 Dynamic |  | Tunnel |  |  |  |  | Train
 Ground |  |  |  |  |  |  | Motorcycle
-|  |  |  |  |  |  |  | Bicycle
-|  |  |  |  |  |  |  | License Plate
+ a |  |  |  |  |  |  | Bicycle
+ b |  |  |  |  |  |  | License Plate
 
 </details>
 
