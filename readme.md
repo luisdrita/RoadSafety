@@ -38,7 +38,7 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 |  | Bus | Bench | Sheep | Suitcase | Kite | Knife | Broccoli | Dinning Table | Keyboard | Refrigerator | Teddy Bear
 |  | Train |  | Cow |  | Baseball Bat | Spoon | Carrot | Toilet | Cell Phone | | Hair Drier
 |  | Truck |  | Elephant |  | Baseball Glove | Bowl | Hot dog | | | | Toothbrush
-|  | Boat |  | Bear |  | Skateboard | Banana | Pizza | | | |
+|  | Boat |  | Bear |  | Skateboard | | Pizza | | | |
 |  |  |  | Zebra |  | Surfboard | | Donut | | | |
 |  |  |  | Giraffe |  | Tennis Racket | | Cake | | | |
 |  |  |  |  |  | Tennis Racket | | | | | |
