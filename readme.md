@@ -31,23 +31,23 @@ over 11 categories.
 
 Person | Vehicle | Outdoor | Animal | Accessory | Sports | Kitchen | Food | Furniture | Electronic | Appliance | Indoor
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Car | Chair | Tv | Microwave | Book
-|  | Car | Fire Hydrant | Cat | Umbrella | Skis | Wine Glass | Truck | Couch | Laptop | Oven | Clock
-|  | Motorcycle | Stop Sign | Dog | Handbag | Snowboard | Cup | Bus | Potted Plant | Mouse | Toaster | Vase
-|  | Airplane | Parking Meter | Horse | Tie | Sports Ball | Fork | Caravan | Bed | Remote | Sink | Scissors
-|  | Bus | Bench | Sheep | Suitcase | Kite | Knife | Trailer | Dinning Table | Keyboard | Refrigerator | Teddy Bear
-|  | Train |  | Cow |  | Baseball Bat | Spoon | Train | Toilet | Cell Phone | | Hair Drier
-|  | Truck |  | Elephant |  | Baseball Glove | Bowl | Motorcycle | | | | Toothbrush
-|  | Boat |  | Bear |  | Skateboard | Banana | Bicycle | | | |
-|  |  |  | Zebra |  | Surfboard | Apple | License Plate | | | |
-|  |  |  | Giraffe |  | Tennis Racket | Sandwich | | | | |
-|  |  |  |  |  | Tennis Racket | Orange | | | | |
-|  |  |  |  |  |  | Broccoli | | | | |
-|  |  |  |  |  |  | Carrot | | | | |
-|  |  |  |  |  |  | Hot dog | | | | |
-|  |  |  |  |  |  | Pizza | | | | |
-|  |  |  |  |  |  | Donut | | | | |
-|  |  |  |  |  |  | Cake | | | | |
+Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana | Chair | TV | Microwave | Book
+|  | Car | Fire Hydrant | Cat | Umbrella | Skis | Wine Glass | Apple | Couch | Laptop | Oven | Clock
+|  | Motorcycle | Stop Sign | Dog | Handbag | Snowboard | Cup | Sandwich | Potted Plant | Mouse | Toaster | Vase
+|  | Airplane | Parking Meter | Horse | Tie | Sports Ball | Fork | Orange | Bed | Remote | Sink | Scissors
+|  | Bus | Bench | Sheep | Suitcase | Kite | Knife | Broccoli | Dinning Table | Keyboard | Refrigerator | Teddy Bear
+|  | Train |  | Cow |  | Baseball Bat | Spoon | Carrot | Toilet | Cell Phone | | Hair Drier
+|  | Truck |  | Elephant |  | Baseball Glove | Bowl | Hot dog | | | | Toothbrush
+|  | Boat |  | Bear |  | Skateboard | Banana | Pizza | | | |
+|  |  |  | Zebra |  | Surfboard | | Donut | | | |
+|  |  |  | Giraffe |  | Tennis Racket | | Cake | | | |
+|  |  |  |  |  | Tennis Racket | | | | | |
+|  |  |  |  |  |  | | | | | |
+|  |  |  |  |  |  | | | | | |
+|  |  |  |  |  |  | | | | | |
+|  |  |  |  |  |  | | | | | |
+|  |  |  |  |  |  | | | | | |
+|  |  |  |  |  |  | | | | | |
 
 
 </details>
