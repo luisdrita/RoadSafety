@@ -15,6 +15,15 @@ Both YOLOv5 and PSPNet101 were benchmarked and validated using a set of 1 image 
 
 Data was storaged and processed in the secure High Performance Cluster from Imperial College London.
 
+### GSV Dataset
+#### Stats
+
+![](./img/dataset/map_export.png)
+
+Minimum | Maximum | Mean | Standard Deviation | Mode | Median
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+1 | 211 | 27 | 24 | 25 | 11
+
 ### Object Detection
 
 YOLOv5 is the most recent version of YOLO which was originally developed by Joseph Redmon. First version runs in framework
@@ -41,13 +50,13 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 |  | Boat |  | Bear |  | Skateboard | | Pizza | | | |
 |  |  |  | Zebra |  | Surfboard | | Donut | | | |
 |  |  |  | Giraffe |  | Tennis Racket | | Cake | | | |
-|  |  |  |  |  | Tennis Racket | | | | | |
 |  |  |  |  |  |  | | | | | |
-|  |  |  |  |  |  | | | | | |
-|  |  |  |  |  |  | | | | | |
-|  |  |  |  |  |  | | | | | |
-|  |  |  |  |  |  | | | | | |
-|  |  |  |  |  |  | | | | | |
+|  |  |  |  |  |  |  | | | | |
+|  |  |  |  |  |  |  | | | | |
+|  |  |  |  |  |  |  | | | | |
+|  |  |  |  |  |  |  | | | | |
+|  |  |  |  |  |  |  | | | | |
+|  |  |  |  |  |  |  | | | | |
 
 
 </details>
@@ -71,6 +80,13 @@ Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
 Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 
 ![](./img/yolov5/lsoa.png)
+
+Original            |  YOLOv5
+:-------------------------:|:-------------------------:
+![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a_processed.png)
+ ddd | ddd
+:-------------------------:|:-------------------------:
+![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a_processed.png)
 
 #### Files
 
