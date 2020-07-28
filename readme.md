@@ -18,7 +18,7 @@ Data was storaged and processed in the secure High Performance Cluster from Impe
 ### GSV Dataset
 #### Stats
 
-![](./img/dataset/map_export.png)
+![](./img/dataset/number images.png)
 
 Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -79,13 +79,22 @@ Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
 Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
 Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 
-Airplane            |  Bicycle
+Bicycle            |  Bus
 :-------------------------:|:-------------------------:
-![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a_processed.png)
+![](./img/yolov5/lsoas/bicycle.png)  |  ![](./img/yolov5/lsoas/bus.png)
 
- Motorcycle | Potted Plant
+Car | Motorcycle
 :-------------------------:|:-------------------------:
-![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a_processed.png)
+![](./img/yolov5/lsoas/car.png)  |  ![](./img/yolov5/lsoas/motorcycle.png)
+
+Stop Sign | Traffic Light
+:-------------------------:|:-------------------------:
+![](./img/yolov5/lsoas/stop sign.png)  |  ![](./img/yolov5/lsoas/traffic light.png)
+
+Truck |
+:-------------------------:|:-------------------------:
+![](./img/yolov5/lsoas/truck.png)  |
+
 
 <details>
   <summary>COCO Objects Stats</summary>
