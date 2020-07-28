@@ -79,14 +79,101 @@ Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
 Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
 Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 
-![](./img/yolov5/lsoa.png)
+Airplane            |  Bicycle
+:-------------------------:|:-------------------------:
+![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a_processed.png)
 
-Original            |  YOLOv5
+ Motorcycle | Potted Plant
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a_processed.png)
- ddd | ddd
-:-------------------------:|:-------------------------:
-![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a_processed.png)
+
+<details>
+  <summary>COCO Objects Stats</summary>
+
+Number Occurrences | Minimum | Maximum | Mean
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+Person  | 107266 | | |
+Bicycle  | 10894 |  | |
+Car  | 1509344 |  |  |
+Motorcycle  | 8970 | | |
+Airplane | 234 | | |
+Bus  | 11512 | | |
+Train  | 657 | | |
+Truck  | 70083 | | |
+Boat  | 971 | | |
+Traffic Light  | 6310 | | |
+Fire Hydrant  | 1168 | | |
+Stop Sign  | 1282 | | |
+Parking Meter  | 968 | | |
+Bench  | 5013 | | |
+Bird  | 509 | | |
+Cat  | 27 | | |
+Dog  | 419 | | |
+Horse | 35 | | |
+Sheep | 13 | | |
+Cow | 79 | | |
+Elephant | 2 | | |
+Bear | 3 | | |
+Zebra  | 5 | | |
+Giraffe | 22 | | |
+Backpack | 1939 | | |
+Umbrella | 378 | | |
+Handbag |  2090 | | |
+Tie | 39 | | |
+Suitcase | 467 | | |
+Frisbee | 384 | | |
+Skis | 2 | | |
+Snowboard | 0 | | |
+Sports Ball | 102 | | |
+Kite | 465 | | |
+Baseball Bat | 7 | | |
+Baseball Glove | 1 | | |
+Skateboard | 245 | | |
+Surfboard | 80 | | |
+Tennis Racket | 13 | | |
+Bottle | 71 | | |
+Wine Glass | 1 | | |
+Cup | 9 | | |
+Fork | 0 | | |
+Knife | 0 | | |
+Spoon | 1 | | |
+Bowl | 6 | | |
+Banana | 6 | | |
+Apple | 6 | | |
+Sandwich | 8 | | |
+Orange | 2 | | |
+Broccoli | 1 | | |
+Carrot | 0 | | |
+Hot Dog | 1 | | |
+Pizza | 4 | | |
+Donut | 3 | | |
+Cake | 1 | | |
+Chair | 2191 | | |
+Couch | 16 | | |
+Potted Plant | 37917 | | |
+Bed | 30 | | |
+Dining Table | 133 | | |
+Toilet | 30 | | |
+Tv | 68 | | |
+Laptop | 1 | | |
+Mouse | 0 | | |
+Remote | 0 | | |
+Keyboard | 0 | | |
+Cell Phone | 21 | | |
+Microwave | 4 | | |
+Oven | 6 | | |
+Toaster | 0 | | |
+Sink | 4 | | |
+Refrigerator | 320 | | |
+Book | 11 | | |
+Clock | 2750 | | |
+Vase | 17 | | |
+Scissors | 1 | | |
+Teddy Bear | 4 | | |
+Hair Drier | 0 | | |
+Toothbrush | 0 | | |
+
+</details>
 
 #### Files
 
