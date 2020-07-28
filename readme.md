@@ -1,5 +1,5 @@
 # Road Safety for Cyclists in London
-[Jupyter Notebook](https://github.com/warcraft12321/RoadSafety/blob/master/RoadSafety.ipynb) | [Report](https://github.com/warcraft12321/RoadSafety/blob/master/text/report.pdf) | [Presentation](https://github.com/warcraft12321/RoadSafety/blob/master/text/presentation.pdf)
+[Jupyter Notebook](https://github.com/warcraft12321/RoadSafety/blob/master/main.ipynb) | [Report](https://github.com/warcraft12321/RoadSafety/blob/master/text/report.pdf) | [Presentation](https://github.com/warcraft12321/RoadSafety/blob/master/text/presentation.pdf)
 
 ### Aim
 
@@ -18,7 +18,7 @@ Data was storaged and processed in the secure High Performance Cluster from Impe
 ### GSV Dataset
 #### Stats
 
-![](./img/dataset/number images.png)
+![](./img/dataset/number_images.png)
 
 Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -79,22 +79,21 @@ Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
 Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
 Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 
-Bicycle            |  Bus
+Airplane            |  Bicycle
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/bicycle.png)  |  ![](./img/yolov5/lsoas/bus.png)
+![](./img/yolov5/lsoas/airplane.png)  |  ![](./img/yolov5/lsoas/bicycle.png)
 
-Car | Motorcycle
+Bus | Car
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/car.png)  |  ![](./img/yolov5/lsoas/motorcycle.png)
+![](./img/yolov5/lsoas/bus.png)  |  ![](./img/yolov5/lsoas/car.png)
 
-Stop Sign | Traffic Light
+Motorcycle | Stop Sign
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/stop sign.png)  |  ![](./img/yolov5/lsoas/traffic light.png)
+![](./img/yolov5/lsoas/motorcycle.png)  |  ![](./img/yolov5/lsoas/stop_sign.png)
 
-Truck |
+Traffic Light | Truck
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/truck.png)  |
-
+![](./img/yolov5/lsoas/traffic_light.png)  | ![](./img/yolov5/lsoas/truck.png)
 
 <details>
   <summary>COCO Objects Stats</summary>
