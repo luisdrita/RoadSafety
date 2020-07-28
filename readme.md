@@ -92,86 +92,86 @@ Airplane            |  Bicycle
 
 Number Occurrences | Minimum | Maximum | Mean
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Person  | 107266 | | |
-Bicycle  | 10894 |  | |
-Car  | 1509344 |  |  |
-Motorcycle  | 8970 | | |
-Airplane | 234 | | |
-Bus  | 11512 | | |
-Train  | 657 | | |
-Truck  | 70083 | | |
-Boat  | 971 | | |
-Traffic Light  | 6310 | | |
-Fire Hydrant  | 1168 | | |
-Stop Sign  | 1282 | | |
-Parking Meter  | 968 | | |
-Bench  | 5013 | | |
-Bird  | 509 | | |
-Cat  | 27 | | |
-Dog  | 419 | | |
-Horse | 35 | | |
-Sheep | 13 | | |
-Cow | 79 | | |
-Elephant | 2 | | |
-Bear | 3 | | |
-Zebra  | 5 | | |
-Giraffe | 22 | | |
-Backpack | 1939 | | |
-Umbrella | 378 | | |
-Handbag |  2090 | | |
-Tie | 39 | | |
-Suitcase | 467 | | |
-Frisbee | 384 | | |
-Skis | 2 | | |
-Snowboard | 0 | | |
-Sports Ball | 102 | | |
-Kite | 465 | | |
-Baseball Bat | 7 | | |
-Baseball Glove | 1 | | |
-Skateboard | 245 | | |
-Surfboard | 80 | | |
-Tennis Racket | 13 | | |
-Bottle | 71 | | |
-Wine Glass | 1 | | |
-Cup | 9 | | |
-Fork | 0 | | |
-Knife | 0 | | |
-Spoon | 1 | | |
-Bowl | 6 | | |
-Banana | 6 | | |
-Apple | 6 | | |
-Sandwich | 8 | | |
-Orange | 2 | | |
-Broccoli | 1 | | |
-Carrot | 0 | | |
-Hot Dog | 1 | | |
-Pizza | 4 | | |
-Donut | 3 | | |
-Cake | 1 | | |
-Chair | 2191 | | |
-Couch | 16 | | |
-Potted Plant | 37917 | | |
-Bed | 30 | | |
-Dining Table | 133 | | |
-Toilet | 30 | | |
-Tv | 68 | | |
-Laptop | 1 | | |
-Mouse | 0 | | |
-Remote | 0 | | |
-Keyboard | 0 | | |
-Cell Phone | 21 | | |
-Microwave | 4 | | |
-Oven | 6 | | |
-Toaster | 0 | | |
-Sink | 4 | | |
-Refrigerator | 320 | | |
-Book | 11 | | |
-Clock | 2750 | | |
-Vase | 17 | | |
-Scissors | 1 | | |
-Teddy Bear | 4 | | |
-Hair Drier | 0 | | |
-Toothbrush | 0 | | |
+Person | 107266 | TBD | TBD | TBD
+Bicycle | 10894 | 0 | 144 | 2
+Car | 1509344 | 13 | 1891 | 312
+Motorcycle | 8970 | 0 | 74 | 1
+Airplane | 234 | 0 | 4 | 0
+Bus | 11512 | 0 | 36 | 2
+Train | 657 | 0 | 5 | 0
+Truck | 70083 | 0 | 192 | 14
+Boat | 971 | 0 | 22 | 0
+Traffic Light | 6310 | 0 | 54 | 1
+Fire Hydrant | 1168 | 0 | 11 | 0
+Stop Sign | 1282 | 0 | 8 | 0
+Parking Meter | 968 | 0 | 7 | 0
+Bench | 5013 | 0 | 23 | 1
+Bird | 509 | 0 | 9 | 0
+Cat | 27 | 0 | 2 | 0
+Dog | 419 | 0 | 3 | 0
+Horse | 35 | 0 | 2 | 0
+Sheep | 13 | 0 | 5 | 0
+Cow | 79 | 0 | 2 | 0
+Elephant | 2 | 0 | 1 | 0
+Bear | 3 | 0 | 1 | 0
+Zebra | 5 | 0 | 1 | 0
+Giraffe | 22 | 0 | 1 | 0
+Backpack | 1939 | 0 | 20 | 0
+Umbrella | 378 | 0 | 9 | 0
+Handbag | 2090 | 0 | 28 | 0
+Tie | 39 | 0 | 5 | 0
+Suitcase | 467 | 0 | 8 | 0
+Frisbee | 384 | 0 | 4 | 0
+Skis | 2 | 0 | 1 | 0
+Snowboard | 0 | 0 | 0 | 0
+Sports Ball | 102 | 0 | 4 | 0
+Kite | 465 | 0 | 16 | 0
+Baseball Bat | 7 | 0 | 3 | 0
+Baseball Glove | 1 | 0 | 1 | 0
+Skateboard | 245 | 0 | 3 | 0
+Surfboard | 80 | 0 | 2 | 0
+Tennis Racket | 13 | 0 | 1 | 0
+Bottle | 71 | 0 | 9 | 0
+Wine Glass | 1 | 0 | 1 | 0
+Cup | 9 | 0 | 2 | 0
+Fork | 0 | 0 | 0 | 0
+Knife | 0 | 0 | 0 | 0
+Spoon | 1 | 0 | 1 | 0
+Bowl | 6 | 0 | 2 | 0
+Banana | 6 | 0 | 3 | 0
+Apple | 6 | 0 | 2 | 0
+Sandwich | 8 | 0 | 3 | 0
+Orange | 2 | 0 | 1 | 0
+Broccoli | 1 | 0 | 1 | 0
+Carrot | 0 | 0 | 0 | 0
+Hot Dog | 1 | 0 | 1 | 0
+Pizza | 4 | 0 | 2 | 0
+Donut | 3 | 0 | 1 | 0
+Cake | 1 | 0 | 1 | 0
+Chair | 2191 | 0 | 56 | 0
+Couch | 16 | 0 | 2 | 0
+Potted Plant | 37917 | 0 | 406 | 7
+Bed | 30 | 0 | 2 | 0
+Dining Table | 133 | 0 | 9 | 0
+Toilet | 30 | 0 | 3 | 0
+Tv | 68 | 0 | 2 | 0
+Laptop | 1 | 0 | 1 | 0
+Mouse | 0 | 0 | 0 | 0
+Remote | 0 | 0 | 0 | 0
+Keyboard | 0 | 0 | 0 | 0
+Cell Phone | 21 | 0 | 2 | 0
+Microwave | 4 | 0 | 1 | 0
+Oven | 6 | 0 | 1 | 0
+Toaster | 0 | 0 | 0 | 0
+Sink | 4 | 0 | 1 | 0
+Refrigerator | 320 | 0 | 7 | 0
+Book | 11 | 0 | 7 | 0
+Clock | 2750 | 0 | 31 | 0
+Vase | 17 | 0 | 4 | 0
+Scissors | 1 | 0 | 1 | 0
+Teddy Bear | 4 | 0 | 1 | 0
+Hair Drier | 0 | 0 | 0 | 0
+Toothbrush | 0 | 0 | 0 | 0
 
 </details>
 
