@@ -79,21 +79,25 @@ Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
 Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
 Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 
-Airplane            |  Bicycle
+Bicycle            |  Bus
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/airplane.png)  |  ![](./img/yolov5/lsoas/bicycle.png)
+![](./img/yolov5/lsoas/bicycle.png)  |  ![](./img/yolov5/lsoas/bus.png)
 
-Bus | Car
+Car | Motorcycle
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/bus.png)  |  ![](./img/yolov5/lsoas/car.png)
+![](./img/yolov5/lsoas/car.png)  |  ![](./img/yolov5/lsoas/motorcycle.png)
 
-Motorcycle | Stop Sign
+Parking Meter | Person
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/motorcycle.png)  |  ![](./img/yolov5/lsoas/stop_sign.png)
+![](./img/yolov5/lsoas/parking_meter.png)  |  ![](./img/yolov5/lsoas/person.png)
 
-Traffic Light | Truck
+Stop Sign | Traffic Light
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/traffic_light.png)  | ![](./img/yolov5/lsoas/truck.png)
+![](./img/yolov5/lsoas/stop_sign.png)  | ![](./img/yolov5/lsoas/traffic_light.png)
+
+Train | Truck
+:-------------------------:|:-------------------------:
+![](./img/yolov5/lsoas/train.png)  | ![](./img/yolov5/lsoas/truck.png)
 
 <details>
   <summary>COCO Objects Stats</summary>
