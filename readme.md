@@ -79,23 +79,23 @@ Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
 Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
 Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 
-Bicycle (&#8593;)          |  Bus
+Bicycle (&#8593;)          |  Bus (&#8595;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/bicycle.png)  |  ![](./img/yolov5/lsoas/bus.png)
 
-Car | Motorcycle
+Car (&#8595;) | Motorcycle (&#8595;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/car.png)  |  ![](./img/yolov5/lsoas/motorcycle.png)
 
-Parking Meter | Person
+Parking Meter (&#8595;) | Person (&#8593;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/parking_meter.png)  |  ![](./img/yolov5/lsoas/person.png)
 
-Stop Sign | Traffic Light
+Stop Sign (&#8593;) | Traffic Light (&#8593;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/stop_sign.png)  | ![](./img/yolov5/lsoas/traffic_light.png)
 
-Train | Truck
+Train (&#8595;) | Truck (&#8595;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/train.png)  | ![](./img/yolov5/lsoas/truck.png)
 
