@@ -18,7 +18,7 @@ Data was storaged and processed in the secure High Performance Cluster from Impe
 ### GSV Dataset
 #### Stats
 
-Bicycle (&#8593;)          |  Bus (&#8595;)
+Images per LSOA         |  Images with Latitude and Longitude
 :-------------------------:|:-------------------------:
 ![](./img/dataset/number_images.png)  |  ![](./img/dataset/images_distribution.png)
 
