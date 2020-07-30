@@ -18,9 +18,13 @@ Data was storaged and processed in the secure High Performance Cluster from Impe
 ### GSV Dataset
 #### Stats
 
-Images per LSOA         |  Images with Latitude and Longitude
-:-------------------------:|:-------------------------:
-![](./img/dataset/number_images.png)  |  ![](./img/dataset/images_distribution.png)
+![](./img/dataset/number_images.png)
+
+Number of images per LSOA in Greater London.
+
+![](./img/dataset/images_distribution.png)
+
+Distriution by latitude and longitude of all image locations.
 
 Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
