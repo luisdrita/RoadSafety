@@ -18,7 +18,9 @@ Data was storaged and processed in the secure High Performance Cluster from Impe
 ### GSV Dataset
 #### Stats
 
-![](./img/dataset/number_images.png)
+Bicycle (&#8593;)          |  Bus (&#8595;)
+:-------------------------:|:-------------------------:
+![](./img/dataset/number_images.png)  |  ![](./img/dataset/images_distribution.png)
 
 Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
