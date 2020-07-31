@@ -24,7 +24,7 @@ Number of images per LSOA in Greater London.
 
 ![](./img/dataset/images_distribution.png)
 
-Distriution by latitude and longitude of all image locations.
+Distribution by latitude and longitude of all image locations.
 
 Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -104,6 +104,26 @@ Stop Sign (&#8593;) | Traffic Light (&#8593;)
 Train (&#8595;) | Truck (&#8595;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/train.png)  | ![](./img/yolov5/lsoas/truck.png)
+
+#### Cyclists Road Safety
+
+Road Safety Positive Scores Combined (&#8593;)          |  Road Safety Negative Scores Combined (&#8595;)
+:-------------------------:|:-------------------------:
+![](./img/yolov5/normalized_positive_score.png)  |  ![](./img/yolov5/normalized_negative_score.png)
+
+![](./img/yolov5/normalized_safety_score.png)
+
+Object            |  Number Occurrences | Object            |  Number Occurrences | Object            |  Number Occurrences
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+Car  |  1509344 | Bicycle  |  10894 | Chair  |  2191
+Person  |  107266 | Motorcycle  |  8970 | Handbag  |  2090
+Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
+Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
+Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
+
+![](./img/yolov5/stats.png)
+
+Image
 
 <details>
   <summary>COCO Objects Stats</summary>
@@ -188,8 +208,9 @@ Clock | 2750 | 0 | 31 | 0
 Vase | 17 | 0 | 4 | 0
 Scissors | 1 | 0 | 1 | 0
 Teddy Bear | 4 | 0 | 1 | 0
-Hair Drier | 0 | 0 | 0 | 0
+Hair Dryer | 0 | 0 | 0 | 0
 Toothbrush | 0 | 0 | 0 | 0
+Total | 1785642 | 0 | 1891 |
 
 </details>
 
