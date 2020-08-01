@@ -24,11 +24,25 @@ Number of images per LSOA in Greater London.
 
 ![](./img/dataset/images_distribution.png)
 
+File            |  Description
+:-------------------------:|:-------------------------:
+[lsoa_number_images.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_number_images.json) |  Number of available GSV images per LSOA
+
 Distribution by latitude and longitude of all image locations.
 
 Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 1 | 211 | 27 | 24 | 25 | 11
+
+Number Images in GSV Dataset | Number of LSOA identified Images (image_labels.csv) | Number of Non-Repeated LSOA identified Images (image_labels.csv) | Number of Image Identified LSOAs (image_labels.csv)
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+518350 | 512816 | 478724 | 4833
+
+#### Files
+
+File            |  Description
+:-------------------------:|:-------------------------:
+[imgId_lsoa.json](https://github.com/warcraft12321/RoadSafety/blob/master/imgId_lsoa.json) |  File converting image Ids into the LSOAs they belong.
 
 ### Object Detection
 
@@ -126,11 +140,11 @@ Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 Image
 
 <details>
-  <summary>COCO Objects Stats</summary>
+  <summary>COCO Objects Stats for all LSOAs</summary>
 
-Category | Number Occurrences | Minimum | Maximum | Mean
+Category | Total Number Occurrences | Minimum | Maximum | Mean
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Person | 107266 | TBD | TBD | TBD
+Person | 107266 | 0 | 695 | 22
 Bicycle | 10894 | 0 | 144 | 2
 Car | 1509344 | 13 | 1891 | 312
 Motorcycle | 8970 | 0 | 74 | 1
@@ -210,7 +224,10 @@ Scissors | 1 | 0 | 1 | 0
 Teddy Bear | 4 | 0 | 1 | 0
 Hair Dryer | 0 | 0 | 0 | 0
 Toothbrush | 0 | 0 | 0 | 0
-Total | 1785642 | 0 | 1891 |
+Total | 1785642 | 0 | 1891 | 370
+
+# LSOAs = 4832
+# Object Detected Images = 458253
 
 </details>
 
@@ -220,8 +237,19 @@ File            |  Description
 :-------------------------:|:-------------------------:
 [total_stats.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/total_stats.json) |  Number of objects detected by YOLOv5 in GSV imagery by class
 [lsoa_objects_number.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number.json) |  Number of objects detected by YOLOv5 in GSV imagery by class and LSOA
+[lsoa_objects_number_average_per_image.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.json) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). JSON format.
+[lsoa_objects_number_average_per_image.csv](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.csv) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). CSV format.
+
 
 [YOLOv5](https://github.com/ultralytics/yolov5)
+
+#### Extras
+
+GSV YOLOv5 Method Testing
+
+Airplane | Potted Plant | Missclassifications
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./img/yolov5/airplane_marked.png) | ![](./img/yolov5/potted_plant_marked.png) | ![](./img/yolov5/stop_sign.png)
 
 ### Image Segmentation
 
@@ -256,6 +284,8 @@ Original            |  PSPNet101
 
 #### Stats
 
+# Segmented Images = 468186
+
 #### Files
 
 File            |  Description
@@ -271,3 +301,5 @@ File            |  Description
 Featured in Towards Data Science (Medium) -> [Article](https://towardsdatascience.com/imperial-college-london-1c9bb442926)
 
 Roadmap -> [Wiki](https://github.com/warcraft12321/RoadSafety/wiki)
+
+Draft -> [Google Doc](https://docs.google.com/document/d/1_THCRamy1gcYiNmc30Uqsic7OGh7pB3A4WUXo2TqV7g/edit?usp=sharing)
