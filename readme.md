@@ -226,10 +226,10 @@ Hair Dryer | 0 | 0 | 0 | 0
 Toothbrush | 0 | 0 | 0 | 0
 Total | 1785642 | 0 | 1891 | 370
 
-# LSOAs = 4832
-# Object Detected Images = 458253
-
 </details>
+
+Number LSOAs = 4832
+Number Object Detected Images = 458253
 
 #### Files
 
@@ -251,9 +251,9 @@ Airplane | Potted Plant
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/airplane_marked.png) | ![](./img/yolov5/potted_plant_marked.png)
 
-Correlations | Miss classifications
+Correlations | Top Misclassification
 :-------------------------:|:-------------------------:
-![](https://media.giphy.com/media/Q9Ff1GaSMTPgTJ850Q/giphy.gif) | ![](./img/yolov5/potted_plant_marked.png)
+![](./img/yolov5/person_handbag.gif) | ![](./img/yolov5/misclassifications.png)
 
 ### Image Segmentation
 
@@ -288,7 +288,7 @@ Original            |  PSPNet101
 
 #### Stats
 
-# Segmented Images = 468186
+Number Segmented Images = 468186
 
 #### Files
 
