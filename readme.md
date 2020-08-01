@@ -247,9 +247,13 @@ File            |  Description
 
 GSV YOLOv5 Method Testing
 
-Airplane | Potted Plant | Missclassifications
-:-------------------------:|:-------------------------:|:-------------------------:
-![](./img/yolov5/airplane_marked.png) | ![](./img/yolov5/potted_plant_marked.png) | ![](./img/yolov5/stop_sign.png)
+Airplane | Potted Plant
+:-------------------------:|:-------------------------:
+![](./img/yolov5/airplane_marked.png) | ![](./img/yolov5/potted_plant_marked.png)
+
+Correlations | Miss classifications
+:-------------------------:|:-------------------------:
+![](https://media.giphy.com/media/Q9Ff1GaSMTPgTJ850Q/giphy.gif) | ![](./img/yolov5/potted_plant_marked.png)
 
 ### Image Segmentation
 
