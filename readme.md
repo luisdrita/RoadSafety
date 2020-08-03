@@ -18,17 +18,17 @@ Data was storaged and processed in the secure High Performance Cluster from Impe
 ### GSV Dataset
 #### Stats
 
+**Number of images per LSOA in Greater London**
+
 ![](./img/dataset/number_images.png)
 
-Number of images per LSOA in Greater London.
+**Distribution by latitude and longitude of all image locations**
 
 ![](./img/dataset/images_distribution.png)
 
-File            |  Description
-:-------------------------:|:-------------------------:
-[lsoa_number_images.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_number_images.json) |  Number of available GSV images per LSOA
+**360 degrees compiled images** (img_id = 23052)
 
-Distribution by latitude and longitude of all image locations.
+![](./img/dataset/gsv_img_angles.png)
 
 Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -36,13 +36,14 @@ Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 
 Number Images in GSV Dataset | Number of LSOA identified Images (image_labels.csv) | Number of Non-Repeated LSOA identified Images (image_labels.csv) | Number of Image Identified LSOAs (image_labels.csv)
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-518350 | 512816 | 478724 | 4833
+518350 | 512812 | 478724 | 4832
 
 #### Files
 
 File            |  Description
 :-------------------------:|:-------------------------:
 [imgId_lsoa.json](https://github.com/warcraft12321/RoadSafety/blob/master/imgId_lsoa.json) |  File converting image Ids into the LSOAs they belong.
+[lsoa_number_images.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_number_images.json) |  Number of available GSV images per LSOA
 
 ### Object Detection
 
@@ -78,7 +79,6 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 |  |  |  |  |  |  |  | | | | |
 |  |  |  |  |  |  |  | | | | |
 
-
 </details>
 
 Original            |  YOLOv5
@@ -91,13 +91,15 @@ Original            |  YOLOv5
 
 ![](./img/yolov5/stats.png)
 
-Object            |  Number Occurrences | Object            |  Number Occurrences | Object            |  Number Occurrences
+Object            |  Number Detections* | Object            |  Number Detections* | Object            |  Number Detections*
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 Car  |  1509344 | Bicycle  |  10894 | Chair  |  2191
 Person  |  107266 | Motorcycle  |  8970 | Handbag  |  2090
 Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
 Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
 Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
+
+* >= 0.5 YOLOv5 score
 
 Bicycle (&#8593;)          |  Bus (&#8595;)
 :-------------------------:|:-------------------------:
@@ -134,6 +136,12 @@ Person  |  107266 | Motorcycle  |  8970 | Handbag  |  2090
 Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
 Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
 Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
+
+**Correlation Matrix**
+
+![](./img/yolov5/correlation_matrix.png)
+
+**Pie Chart**
 
 ![](./img/yolov5/stats.png)
 
