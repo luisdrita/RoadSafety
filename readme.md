@@ -99,7 +99,7 @@ Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
 Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
 Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 
-* >= 0.5 YOLOv5 score
+\* >= 0.5 YOLOv5 score
 
 Bicycle (&#8593;)          |  Bus (&#8595;)
 :-------------------------:|:-------------------------:
