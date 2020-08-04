@@ -81,9 +81,7 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 
 </details>
 
-Original            |  YOLOv5
-:-------------------------:|:-------------------------:
-![](./img/yolov5/23963_a.png)  |  ![](./img/yolov5/23963_a_processed.png)
+![](./img/yolov5/YOLOv5.png)
 
 [(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing)
 
@@ -288,9 +286,7 @@ Ground |  |  |  |  |  |  | Motorcycle
 
 </details>
 
-Original            |  PSPNet101
-:-------------------------:|:-------------------------:
-![](./img/pspnet101/8_a.png)  |  ![](./img/pspnet101/8_a_processed.png)
+![](./img/pspnet101/PSPNet101.png)
 
 [(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing)
 
