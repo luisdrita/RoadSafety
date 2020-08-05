@@ -81,13 +81,23 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 
 </details>
 
+**YOLOv5 in Static Image from London**
+
 ![](./img/yolov5/YOLOv5.png)
 
-[![YOLOv5 | London](http://img.youtube.com/vi/uLT0PER-QDc/0.jpg)](http://www.youtube.com/watch?v=uLT0PER-QDc "YOLOv5 | London")
+**YOLOv5 in Real-Time in London**
+
+[![YOLOv5 | London](http://img.youtube.com/vi/ncwcWl-zOws/0.jpg)](http://www.youtube.com/watch?v=ncwcWl-zOws "YOLOv5 | London")
 
 [(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing)
 
 #### Stats
+
+**Performance**
+
+![](./img/yolov5/stats.png)
+
+**Objects Prevalence in GSV Dataset**
 
 ![](./img/yolov5/stats.png)
 
