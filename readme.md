@@ -149,7 +149,7 @@ Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 
 **Correlation Matrix**
 
-![](./img/yolov5/correlation_matrix.png)
+![](./img/yolov5/correlation_matrix2.png)
 
 **Pie Chart**
 
