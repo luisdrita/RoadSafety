@@ -297,7 +297,7 @@ Ground |  |  |  |  |  |  | Motorcycle
 #### Stats
 
 **Segmented Images Distribution**
-![](./img/pspnet101/image_segmentation_distribution.png)
+![](./img/pspnet101/image_segmentation_distribution2.png)
 
 Number Segmented Images = 468186
 
