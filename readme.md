@@ -303,11 +303,11 @@ Number Segmented Images = 468186
 
 Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-building  |  47394852284 | sidewalk  |  2772560820 | motorcycle  |  299507380 | traffic sign | 58135598
-sky  |  38423367965 | fence  |  2177733764 | person  |  232309236 | rider | 13948361
-road  |  38235843337 | terrain  |  1787689493 | bicycle  |  95469333 | traffic light | 12472659
-vegetation  |  30977112560 | wall  |  765524909 | truck  |  91256316 | train | 6842318
-car  |  9830297990 | pole  |  303407190 | bus  |  81476810 | |
+Building  |  47394852284 | Sidewalk  |  2772560820 | Motorcycle  |  299507380 | Traffic Sign | 58135598
+Sky  |  38423367965 | Fence  |  2177733764 | Person  |  232309236 | Rider | 13948361
+Road  |  38235843337 | Terrain  |  1787689493 | Bicycle  |  95469333 | Traffic Light | 12472659
+Vegetation  |  30977112560 | Wall  |  765524909 | Truck  |  91256316 | Train | 6842318
+Car  |  9830297990 | Pole  |  303407190 | Bus  |  81476810 | |
 
 #### Files
 
