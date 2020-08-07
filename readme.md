@@ -93,14 +93,6 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 
 #### Stats
 
-**Performance**
-
-![](./img/yolov5/stats.png)
-
-**Objects Prevalence in GSV Dataset**
-
-![](./img/yolov5/stats.png)
-
 Object            |  Number Detections* | Object            |  Number Detections* | Object            |  Number Detections*
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 Car  |  1509344 | Bicycle  |  10894 | Chair  |  2191
@@ -151,9 +143,9 @@ Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
 
 ![](./img/yolov5/correlation_matrix2.png)
 
-**Pie Chart**
+**Detected Objects Distribution**
 
-![](./img/yolov5/stats.png)
+![](./img/yolov5/object_detection_distribution.png)
 
 Image
 
@@ -303,6 +295,9 @@ Ground |  |  |  |  |  |  | Motorcycle
 [(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing)
 
 #### Stats
+
+**Segmented Images Distribution**
+![](./img/pspnet101/image_segmentation_distribution.png)
 
 Number Segmented Images = 468186
 
