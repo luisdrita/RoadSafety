@@ -303,7 +303,7 @@ Number Segmented Images = 468186
 
 Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Building  |  47394852284 | Sidewalk  |  2772560820 | Motorcycle  |  299507380 | Traffic Sign | 58135598
+Building  |  47 394 852 284 | Sidewalk  |  2772560820 | Motorcycle  |  299507380 | Traffic Sign | 58135598
 Sky  |  38423367965 | Fence  |  2177733764 | Person  |  232309236 | Rider | 13948361
 Road  |  38235843337 | Terrain  |  1787689493 | Bicycle  |  95469333 | Traffic Light | 12472659
 Vegetation  |  30977112560 | Wall  |  765524909 | Truck  |  91256316 | Train | 6842318
