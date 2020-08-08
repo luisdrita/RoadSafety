@@ -36,7 +36,7 @@ Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 
 Number Images in GSV Dataset | Number of LSOA identified Images (image_labels.csv) | Number of Non-Repeated LSOA identified Images (image_labels.csv) | Number of Image Identified LSOAs (image_labels.csv)
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-518350 | 512812 | 478724 | 4832
+518 350 | 512 812 | 478 724 | 4832
 
 #### Files
 
@@ -93,11 +93,11 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 
 Object            |  Number Detections* | Object            |  Number Detections* | Object            |  Number Detections*
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Car  |  1509344 | Bicycle  |  10894 | Chair  |  2191
-Person  |  107266 | Motorcycle  |  8970 | Handbag  |  2090
-Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
-Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
-Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
+Car  |  1 509 344 | Bicycle  |  10 894 | Chair  |  2191
+Person  |  107 266 | Motorcycle  |  8970 | Handbag  |  2090
+Truck  |  70 083 | Traffic Light  |  6310 | Backpack  |  1939
+Potted Plant  |  37 917 | Bench  |  5013 | Stop Sign  |  1282
+Bus  |  11 512 | Clock  |  2750 | Fire Hydrant  |  1168
 
 \* >= 0.5 YOLOv5 score
 
@@ -123,19 +123,19 @@ Train (&#8595;) | Truck (&#8595;)
 
 #### Cyclists Road Safety
 
-Road Safety Positive Scores Combined (&#8593;)          |  Road Safety Negative Scores Combined (&#8595;)
+Pedestrians and Cyclists in Greater London (average number per image) (&#8593;)          |  Traffic (buses, cars and trucks) in Greater London (average number per image) (&#8595;)
 :-------------------------:|:-------------------------:
-![](./img/yolov5/normalized_positive_score.png)  |  ![](./img/yolov5/normalized_negative_score.png)
+![](./img/yolov5/normalized_pedestrians_score.png)  |  ![](./img/yolov5/normalized_traffic_score.png)
 
 ![](./img/yolov5/normalized_safety_score.png)
 
 Object            |  Number Occurrences | Object            |  Number Occurrences | Object            |  Number Occurrences
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Car  |  1509344 | Bicycle  |  10894 | Chair  |  2191
-Person  |  107266 | Motorcycle  |  8970 | Handbag  |  2090
-Truck  |  70083 | Traffic Light  |  6310 | Backpack  |  1939
-Potted Plant  |  37917 | Bench  |  5013 | Stop Sign  |  1282
-Bus  |  11512 | Clock  |  2750 | Fire Hydrant  |  1168
+Car  |  1 509 344 | Bicycle  |  10 894 | Chair  |  2191
+Person  |  107 266 | Motorcycle  |  8970 | Handbag  |  2090
+Truck  |  70 083 | Traffic Light  |  6310 | Backpack  |  1939
+Potted Plant  |  37 917 | Bench  |  5013 | Stop Sign  |  1282
+Bus  |  11 512 | Clock  |  2750 | Fire Hydrant  |  1168
 
 **Correlation Matrix**
 
@@ -152,14 +152,14 @@ Image
 
 Category | Total Number Occurrences | Minimum | Maximum | Mean
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Person | 107266 | 0 | 695 | 22
-Bicycle | 10894 | 0 | 144 | 2
-Car | 1509344 | 13 | 1891 | 312
+Person | 107 266 | 0 | 695 | 22
+Bicycle | 10 894 | 0 | 144 | 2
+Car | 1 509 344 | 13 | 1891 | 312
 Motorcycle | 8970 | 0 | 74 | 1
 Airplane | 234 | 0 | 4 | 0
-Bus | 11512 | 0 | 36 | 2
+Bus | 11 512 | 0 | 36 | 2
 Train | 657 | 0 | 5 | 0
-Truck | 70083 | 0 | 192 | 14
+Truck | 70 083 | 0 | 192 | 14
 Boat | 971 | 0 | 22 | 0
 Traffic Light | 6310 | 0 | 54 | 1
 Fire Hydrant | 1168 | 0 | 11 | 0
@@ -210,7 +210,7 @@ Donut | 3 | 0 | 1 | 0
 Cake | 1 | 0 | 1 | 0
 Chair | 2191 | 0 | 56 | 0
 Couch | 16 | 0 | 2 | 0
-Potted Plant | 37917 | 0 | 406 | 7
+Potted Plant | 37 917 | 0 | 406 | 7
 Bed | 30 | 0 | 2 | 0
 Dining Table | 133 | 0 | 9 | 0
 Toilet | 30 | 0 | 3 | 0
@@ -232,7 +232,7 @@ Scissors | 1 | 0 | 1 | 0
 Teddy Bear | 4 | 0 | 1 | 0
 Hair Dryer | 0 | 0 | 0 | 0
 Toothbrush | 0 | 0 | 0 | 0
-Total | 1785642 | 0 | 1891 | 370
+Total | 1 785 642 | 0 | 1891 | 370
 
 </details>
 
@@ -297,11 +297,11 @@ Number Segmented Images = 468186
 
 Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Building  |  47 394 852 284 | Sidewalk  |  2772560820 | Motorcycle  |  299507380 | Traffic Sign | 58135598
-Sky  |  38423367965 | Fence  |  2177733764 | Person  |  232309236 | Rider | 13948361
-Road  |  38235843337 | Terrain  |  1787689493 | Bicycle  |  95469333 | Traffic Light | 12472659
-Vegetation  |  30977112560 | Wall  |  765524909 | Truck  |  91256316 | Train | 6842318
-Car  |  9830297990 | Pole  |  303407190 | Bus  |  81476810 | |
+Building  |  47 394 852 284 | Sidewalk  |  2 772 560 820 | Motorcycle  |  299 507 380 | Traffic Sign | 58 135 598
+Sky  |  38 423 367 965 | Fence  |  2 177 733 764 | Person  |  232 309 236 | Rider | 13 948 361
+Road  |  38 235 843 337 | Terrain  |  1 787 689 493 | Bicycle  |  95 469 333 | Traffic Light | 12 472 659
+Vegetation  |  30 977 112 560 | Wall  |  765 524 909 | Truck  |  91 256 316 | Train | 6 842 318
+Car  |  9 830 297 990 | Pole  |  303 407 190 | Bus  |  81 476 810 | |
 
 #### Files
 
