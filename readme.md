@@ -45,7 +45,7 @@ File            |  Description
 [imgId_lsoa.json](https://github.com/warcraft12321/RoadSafety/blob/master/imgId_lsoa.json) |  File converting image Ids into the LSOAs they belong.
 [lsoa_number_images.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_number_images.json) |  Number of available GSV images per LSOA
 
-### Object Detection
+### Object Detection | [YOLOv5](https://github.com/ultralytics/yolov5)
 
 YOLOv5 is the most recent version of YOLO which was originally developed by Joseph Redmon. First version runs in framework
 called Darknet which was purposely built to execute YOLO.
@@ -88,8 +88,6 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 **YOLOv5 in Real-Time in London**
 
 [![YOLOv5 | London](http://img.youtube.com/vi/ncwcWl-zOws/0.jpg)](http://www.youtube.com/watch?v=ncwcWl-zOws "YOLOv5 | London")
-
-[(Click to See 1 Image per LSOA)](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing)
 
 #### Stats
 
@@ -249,10 +247,7 @@ File            |  Description
 [lsoa_objects_number.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number.json) |  Number of objects detected by YOLOv5 in GSV imagery by class and LSOA.
 [lsoa_objects_number_average_per_image.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.json) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). JSON format.
 [lsoa_objects_number_average_per_image.csv](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.csv) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). CSV format.
-[Object Detected Images](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing) |  1 image per London LSOA with the detected objects identified.
-
-
-[YOLOv5](https://github.com/ultralytics/yolov5)
+[yolov5_lsoa](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing) |  1 image per London LSOA with the detected objects identified.
 
 #### Extras
 
@@ -266,7 +261,7 @@ Correlations | Top Misclassification
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/person_handbag.gif) | ![](./img/yolov5/misclassifications.png)
 
-### Image Segmentation
+### Image Segmentation | [PSPNet101](https://github.com/hellochick/PSPNet-tensorflow)
 
 Image segmentation models reached a precision plateau (in terms of average IoU) in the previous 2 years. Due to their
 long execution times, it was chosen the model executing faster and with the higher precision.
@@ -314,9 +309,7 @@ File            |  Description
 :-------------------------:|:-------------------------:
 [total_stats.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/total_stats.json) |  Total Number of Pixels per Cityscapes Label in GSV Dataset.
 [rgb_label.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/rgb_label) |  Conversion from RGB values to a Cityscapes label.
-[Segmented Images](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing) |  Folder with 1 segmented image per London LSOA.
-
-[PSPNet101](https://github.com/hellochick/PSPNet-tensorflow)
+[pspnet101_lsoa](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing) |  Folder with 1 segmented image per London LSOA.
 
 ### Supervisors
 [Majid Ezzati](https://www.imperial.ac.uk/people/majid.ezzati) (Imperial College London) | [Ricky Nathvani](https://www.imperial.ac.uk/people/r.nathvani) (Imperial College London)
