@@ -139,7 +139,7 @@ Train (&#8595;) | Truck (&#8595;)
 
 \* &#8593; and &#8595; were positively and negatively associated to road safety, respectively.
 
-** Combining some of the previous risk factors **
+**Combining some of the previous risk factors**
 
 Pedestrians and Cyclists in Greater London (average number per image) (&#8593;)          |  Traffic (buses, cars and trucks) in Greater London (average number per image) (&#8595;)
 :-------------------------:|:-------------------------:
@@ -150,6 +150,7 @@ Pedestrians and Cyclists in Greater London (average number per image) (&#8593;) 
 ![](./img/yolov5/normalized_safety_score.png)
 
 **Top 15 detected objects correlation matrix**
+Includes pearson correlation factor for each combination, plus the respective p-value score.
 
 ![](./img/yolov5/correlation_matrix_p_values.png)
 
