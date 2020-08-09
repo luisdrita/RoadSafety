@@ -26,31 +26,44 @@ are provided below.
 
 **Number of images per LSOA in Greater London**
 
+Knowing the number of available images per LSOA allows us to normalize the objects counting in each area.
+
 ![](./img/dataset/number_images.png)
 
 **Distribution by latitude and longitude of all image locations**
+
+There is an higher density of GSV images in Central London.
 
 ![](./img/dataset/images_distribution.png)
 
 **Example of data point with 4 images covering 360º angle**
 
+Each image per data point covers a 90º degrees angle.
+
 ![](./img/dataset/gsv_img_angles.png)
 
 img_id = 23052
 
-**Statistics on the number of available images per LSOA in the dataset**
+**Number of available images per LSOA in the dataset**
+
+Distribution stats on the availability of GSV images across Greater London LSOAs.
 
 Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 1 | 211 | 27 | 24 | 25 | 11
 
-**Total number of available images**
+**Total number of available images in the complete GSV dataset**
+
+Not all images present in the GSV imagery dataset are LSOA labeled. For this reason, only 478 724 of the 518 350 were
+used when performing object detection or image segmentation.
 
 Number Images in GSV Dataset | Number of LSOA identified Images (image_labels.csv) | Number of Non-Repeated LSOA identified Images (image_labels.csv) | Number of Image Identified LSOAs (image_labels.csv)
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 518 350 | 512 812 | 478 724 | 4832
 
 **Generated files**
+
+All the generated files are available in the project's repository.
 
 File            |  Description
 :-------------------------:|:-------------------------:
@@ -90,15 +103,21 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 
 **YOLOv5 executed in a static image from the dataset**
 
+This example illustrates very well the power of this tool. Even the reflection of the car in a window nearby the algorithm
+was able to count as the right object.
+
 ![](./img/yolov5/YOLOv5.png)
 
 **YOLOv5 executed in real-time in a video from London**
+
+Video uploaded to YouTube showing how YOLOv5 is able to detect in real-time, with high accuracy, objects from a big range of sizes and
+sometimes occluded by others.
 
 [![YOLOv5 | London](http://img.youtube.com/vi/ncwcWl-zOws/0.jpg)](http://www.youtube.com/watch?v=ncwcWl-zOws "YOLOv5 | London")
 
 **Number of detections to the top 15 most common objects**
 
-
+In the top 15 most commonly detected objects in the GSV dataset are the ones identified as highly relevant to assess cyclist's road safety.
 
 Object            |  Number Detections* | Object            |  Number Detections* | Object            |  Number Detections*
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -111,6 +130,8 @@ Bus  |  11 512 | Clock  |  2750 | Fire Hydrant  |  1168
 \* >= 0.5 YOLOv5 score
 
 **LSOA objects distribution in Greater London**
+
+Full list of the most relevant objects distribution by LSOA with the corresponding histograms on the right side.
 
 Bicycle LSOA (&#8593;)          |  Bicycle Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
@@ -152,6 +173,10 @@ Truck LSOA (&#8595;) | Truck Distribution Histogram (&#8595;)
 
 **Combining some of the previous risk factors**
 
+It was combined 5 of the previous LSOAs to obtain a measure on the total number of pedestrians and cyclists in London (in the context
+of this project, this was perceived as enhancing safety factor for other cyclists). And a second LSOA where the total number of (motorized) vehicles
+in London was plotted.
+
 Pedestrians and Cyclists in Greater London (average number per image) (&#8593;)          |  Traffic (buses, cars and trucks) in Greater London (average number per image) (&#8595;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/normalized_pedestrians_score.png)  |  ![](./img/yolov5/normalized_traffic_score.png)
@@ -170,13 +195,14 @@ Includes Pearson correlation factor for each combination of objects, plus the re
 
 ![](./img/yolov5/correlation_matrix_p_values.png)
 
-**Gif representation of the 2 most correlated objects**
+**GIF representation of the 2 most correlated objects**
 
 This GIF highlights the similar distribution between 1 of the 2 most correlated objects present in the correlation matrix above.
 
 ![](./img/yolov5/person_handbag.gif)
 
 **Top 15 detected objects distribution**
+
 Top 15 detections contain all the objects that were defined as relevant in assessing road safety in a cyclist perspective.
 One immediate observation is that the majority of the detected objects were cars. This is not surprising once GSV
 images were taken from the road.
@@ -184,6 +210,7 @@ images were taken from the road.
 ![](./img/yolov5/object_detection_distribution.png)
 
 **Detailed object detection information for all categories in MS Coco, present in the GSV imagery**
+
 In the dropdown below is provided detailed information on the total number of occurrences, minimum, maximum and mean
 number of objects per London LSOA.
 
@@ -277,6 +304,7 @@ Total | 1 785 642 | 0 | 1891 | 370
 </details>
 
 **Generated Files**
+
 All the generated files are available on the project's repository or, in the case of the object detected images (1 per LSOA), in a linked
 Google Drive folder.
 
@@ -288,11 +316,8 @@ File            |  Description
 [lsoa_objects_number_average_per_image.csv](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.csv) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). CSV format.
 [yolov5_lsoa](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing) |  1 image per London LSOA with the detected objects identified.
 
-Airplane | Potted Plant
-:-------------------------:|:-------------------------:
-![](./img/yolov5/airplane_marked.png) | ![](./img/yolov5/potted_plant_marked.png)
-
 **YOLOv5 limitations**
+
 For all road objects we intended to identify, the accuracy rates were very high, with very few misclassifications due to the high detection threshold (0.5) it was set.
 For this reason, the number of detected objects in the image is likely to be higher than the detected one.
 In terms of other objects, satellite dishes were often misclassified as clocks. There is a strong resemblance in frontal images between
@@ -307,6 +332,10 @@ Analysis of a significant set of GSV images in London unveiled meaningful LSOA l
 airplane distribution in the areas closer to the 2 airports in Greater London. Second, the presence of potted plants
 was found to be more significant around the biggest parks.
 This shows the potential of GSV imagery analysis is not limited to assess road safety.
+
+Airplane | Potted Plant
+:-------------------------:|:-------------------------:
+![](./img/yolov5/airplane_marked.png) | ![](./img/yolov5/potted_plant_marked.png)
 
 ### Image Segmentation | [PSPNet101](https://github.com/hellochick/PSPNet-tensorflow)
 
@@ -337,17 +366,20 @@ Ground |  |  |  |  |  |  | Motorcycle
 </details>
 
 **Example of a segmented image with identified labels included**
+
 After executing PSPNet101 in one of the images from the dataset, we obtain a segmented one where all pixels have an associated color
 accordingly to the category they belong. It was created a dictionary that links each one of these colors to the different
 object categories.
 ![](./img/pspnet101/PSPNet101.png)
 
 **Segmented images distribution by number of pixels**
+
 Road safety related objects are among the most detected. Consequently, PSPNet101 pre-trained in Cityscapes is
 an appropriate tool to extract relevant information on this topic.
 ![](./img/pspnet101/image_segmentation_distribution2.png)
 
 **Number of labeled pixels for the top 20 most common categories**
+
 Due to time constraints, contrarily to the object detection part, it was only possible to analyse the general presence
 of pixel labels at a dataset (not LSOA) level.
 
@@ -360,6 +392,7 @@ Vegetation  |  30 977 112 560 | Wall  |  765 524 909 | Truck  |  91 256 316 | Tr
 Car  |  9 830 297 990 | Pole  |  303 407 190 | Bus  |  81 476 810 | |
 
 **PSPNet101 limitations**
+
 The main difficulties of image segmentation are:
 * Account for image angles when trying to capture the shape of an object;
 * Object occlusion;
@@ -369,6 +402,7 @@ low resolution. This happens because the imagery dataset, which was extracted fr
 quality.
 
 **Generated Files**
+
 All the generated files are available on the project's repository or, in the case of the segmented images (1 per LSOA), in a linked
 Google Drive folder.
 
@@ -379,6 +413,7 @@ File            |  Description
 [pspnet101_lsoa](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing) |  Folder with 1 segmented image per London LSOA.
 
 **Future Directions**
+
 1. Analysing segmented images road by road;
 2. Having a higher resolution London imagery dataset with better coverage from all Greater London territory;
 3. Link image segmentation analysis with the objects detected using YOLOv5;
