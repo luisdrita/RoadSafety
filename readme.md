@@ -376,6 +376,7 @@ object categories.
 
 Road safety related objects are among the most detected. Consequently, PSPNet101 pre-trained in Cityscapes is
 an appropriate tool to extract relevant information on this topic.
+
 ![](./img/pspnet101/image_segmentation_distribution2.png)
 
 **Number of labeled pixels for the top 20 most common categories**
@@ -420,6 +421,8 @@ File            |  Description
 4. Although this would not represent a significant improvement, using a more precise pre-trained model like Xception71
 available in [TensorFlow DeepLab Model Zoo](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md) would
 increase the quality of the segmented images.
+
+![](./img/pspnet101/image_segmentation.png)
 
 ### Supervisors
 [Majid Ezzati](https://www.imperial.ac.uk/people/majid.ezzati) (Imperial College London) | [Ricky Nathvani](https://www.imperial.ac.uk/people/r.nathvani) (Imperial College London)
