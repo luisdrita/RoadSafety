@@ -85,13 +85,6 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 |  | Boat |  | Bear |  | Skateboard | | Pizza | | | |
 |  |  |  | Zebra |  | Surfboard | | Donut | | | |
 |  |  |  | Giraffe |  | Tennis Racket | | Cake | | | |
-|  |  |  |  |  |  | | | | | |
-|  |  |  |  |  |  |  | | | | |
-|  |  |  |  |  |  |  | | | | |
-|  |  |  |  |  |  |  | | | | |
-|  |  |  |  |  |  |  | | | | |
-|  |  |  |  |  |  |  | | | | |
-|  |  |  |  |  |  |  | | | | |
 
 </details>
 
@@ -105,6 +98,8 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 
 **Number of detections to the top 15 most common objects**
 
+
+
 Object            |  Number Detections* | Object            |  Number Detections* | Object            |  Number Detections*
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 Car  |  1 509 344 | Bicycle  |  10 894 | Chair  |  2191
@@ -117,25 +112,41 @@ Bus  |  11 512 | Clock  |  2750 | Fire Hydrant  |  1168
 
 **LSOA objects distribution in Greater London**
 
-Bicycle (&#8593;)          |  Bus (&#8595;)
+Bicycle LSOA (&#8593;)          |  Bicycle Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/bicycle.png)  |  ![](./img/yolov5/lsoas/bus.png)
+![](./img/yolov5/lsoas/bicycle.png)  |  ![](./img/yolov5/lsoas_histograms/bus.png)
 
-Car (&#8595;) | Motorcycle (&#8595;)
+Bus LSOA (&#8595;)         |  Bus Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/car.png)  |  ![](./img/yolov5/lsoas/motorcycle.png)
+![](./img/yolov5/lsoas/bus.png)  |  ![](./img/yolov5/lsoas_histograms/bus.png)
 
-Parking Meter (&#8595;) | Person (&#8593;)
+Car LSOA (&#8595;) | Car Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/parking_meter.png)  |  ![](./img/yolov5/lsoas/person.png)
+![](./img/yolov5/lsoas/car.png)  |  ![](./img/yolov5/lsoas_histograms/motorcycle.png)
 
-Stop Sign (&#8593;) | Traffic Light (&#8593;)
+Motorcycle LSOA (&#8595;) | Motorcycle Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/stop_sign.png)  | ![](./img/yolov5/lsoas/traffic_light.png)
+![](./img/yolov5/lsoas/motorcycle.png)  |  ![](./img/yolov5/lsoas_histograms/motorcycle.png)
 
-Train (&#8595;) | Truck (&#8595;)
+Parking Meter LSOA (&#8595;) | Parking Meter Distribution Histogram (&#8593;)
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/train.png)  | ![](./img/yolov5/lsoas/truck.png)
+![](./img/yolov5/lsoas/parking_meter.png)  |  ![](./img/yolov5/lsoas_histograms/person.png)
+
+Person LSOA (&#8593;) | Person Distribution Histogram (&#8593;)
+:-------------------------:|:-------------------------:
+![](./img/yolov5/lsoas/person.png)  |  ![](./img/yolov5/lsoas_histograms/person.png)
+
+Stop Sign LSOA (&#8593;) | Traffic Light Distribution Histogram (&#8593;)
+:-------------------------:|:-------------------------:
+![](./img/yolov5/lsoas/stop_sign.png)  | ![](./img/yolov5/lsoas_histograms/traffic_light.png)
+
+Traffic Light LSOA (&#8593;) | Traffic Light Distribution Histogram (&#8593;)
+:-------------------------:|:-------------------------:
+![](./img/yolov5/lsoas/traffic_light.png)  | ![](./img/yolov5/lsoas_histograms/traffic_light.png)
+
+Truck LSOA (&#8595;) | Truck Distribution Histogram (&#8595;)
+:-------------------------:|:-------------------------:
+![](./img/yolov5/lsoas/truck.png)  | ![](./img/yolov5/lsoas_histograms/truck.png)
 
 \* &#8593; and &#8595; were positively and negatively associated to road safety, respectively.
 
@@ -147,18 +158,34 @@ Pedestrians and Cyclists in Greater London (average number per image) (&#8593;) 
 
 **Combination of the 2 previous LSOAs**
 
+During this project, we did not defined a precise metric for assessing cyclist road safety. Although, one strong
+possibility would be a weighted combination of positive and negative risk factors like the ones exposed by LSOA
+distributions above.
+
 ![](./img/yolov5/normalized_safety_score.png)
 
 **Top 15 detected objects correlation matrix**
-Includes pearson correlation factor for each combination, plus the respective p-value score.
+
+Includes Pearson correlation factor for each combination of objects, plus the respective p-value scores.
 
 ![](./img/yolov5/correlation_matrix_p_values.png)
 
+**Gif representation of the 2 most correlated objects**
+
+This GIF highlights the similar distribution between 1 of the 2 most correlated objects present in the correlation matrix above.
+
+![](./img/yolov5/person_handbag.gif)
+
 **Top 15 detected objects distribution**
+Top 15 detections contain all the objects that were defined as relevant in assessing road safety in a cyclist perspective.
+One immediate observation is that the majority of the detected objects were cars. This is not surprising once GSV
+images were taken from the road.
 
 ![](./img/yolov5/object_detection_distribution.png)
 
 **Detailed object detection information for all categories in MS Coco, present in the GSV imagery**
+In the dropdown below is provided detailed information on the total number of occurrences, minimum, maximum and mean
+number of objects per London LSOA.
 
 <details>
   <summary>COCO Objects Stats for all LSOAs</summary>
@@ -250,6 +277,8 @@ Total | 1 785 642 | 0 | 1891 | 370
 </details>
 
 **Generated Files**
+All the generated files are available on the project's repository or, in the case of the object detected images (1 per LSOA), in a linked
+Google Drive folder.
 
 File            |  Description
 :-------------------------:|:-------------------------:
@@ -259,6 +288,19 @@ File            |  Description
 [lsoa_objects_number_average_per_image.csv](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.csv) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). CSV format.
 [yolov5_lsoa](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing) |  1 image per London LSOA with the detected objects identified.
 
+Airplane | Potted Plant
+:-------------------------:|:-------------------------:
+![](./img/yolov5/airplane_marked.png) | ![](./img/yolov5/potted_plant_marked.png)
+
+**YOLOv5 limitations**
+For all road objects we intended to identify, the accuracy rates were very high, with very few misclassifications due to the high detection threshold (0.5) it was set.
+For this reason, the number of detected objects in the image is likely to be higher than the detected one.
+In terms of other objects, satellite dishes were often misclassified as clocks. There is a strong resemblance in frontal images between
+clock pointers and dishes arms. Boats were wrongly classified as construction containers due to their shape. Fences as benches presumably due to their texture. And
+Streetlights as kites and frisbees, possible because they have similar backgrounds - sky.
+
+![](./img/yolov5/misclassifications.png)
+
 **Future Directions**
 
 Analysis of a significant set of GSV images in London unveiled meaningful LSOA level patterns. One is the
@@ -266,22 +308,14 @@ airplane distribution in the areas closer to the 2 airports in Greater London. S
 was found to be more significant around the biggest parks.
 This shows the potential of GSV imagery analysis is not limited to assess road safety.
 
-Airplane | Potted Plant
-:-------------------------:|:-------------------------:
-![](./img/yolov5/airplane_marked.png) | ![](./img/yolov5/potted_plant_marked.png)
-
-Correlations | Top Misclassification
-:-------------------------:|:-------------------------:
-![](./img/yolov5/person_handbag.gif) | ![](./img/yolov5/misclassifications.png)
-
 ### Image Segmentation | [PSPNet101](https://github.com/hellochick/PSPNet-tensorflow)
 
 **Description**
 
 Image segmentation models reached a precision plateau (in terms of average IoU) in the previous 2 years. Due to their
-long execution times, it was chosen the model executing faster and with the higher precision.
+long execution times, it was chosen the model executing faster, with the higher precision and better documentation.
 
-PSPNet101 was pre-trained in Cityscapes dataset. This way, it was able to label all pixels from an image across 100
+PSPNet101 was pre-trained in the Cityscapes dataset. This way, it was able to label all pixels from an image across 100
 categories.
 
 <details>
@@ -303,12 +337,19 @@ Ground |  |  |  |  |  |  | Motorcycle
 </details>
 
 **Example of a segmented image with identified labels included**
+After executing PSPNet101 in one of the images from the dataset, we obtain a segmented one where all pixels have an associated color
+accordingly to the category they belong. It was created a dictionary that links each one of these colors to the different
+object categories.
 ![](./img/pspnet101/PSPNet101.png)
 
 **Segmented images distribution by number of pixels**
+Road safety related objects are among the most detected. Consequently, PSPNet101 pre-trained in Cityscapes is
+an appropriate tool to extract relevant information on this topic.
 ![](./img/pspnet101/image_segmentation_distribution2.png)
 
 **Number of labeled pixels for the top 20 most common categories**
+Due to time constraints, contrarily to the object detection part, it was only possible to analyse the general presence
+of pixel labels at a dataset (not LSOA) level.
 
 Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -318,13 +359,32 @@ Road  |  38 235 843 337 | Terrain  |  1 787 689 493 | Bicycle  |  95 469 333 | T
 Vegetation  |  30 977 112 560 | Wall  |  765 524 909 | Truck  |  91 256 316 | Train | 6 842 318
 Car  |  9 830 297 990 | Pole  |  303 407 190 | Bus  |  81 476 810 | |
 
+**PSPNet101 limitations**
+The main difficulties of image segmentation are:
+* Account for image angles when trying to capture the shape of an object;
+* Object occlusion;
+* Sometimes roads and sidewalks appear unexpectedly disrupted;
+* Image resolution. In the case of structures with a small area (streetlights), it might not be possible to segment them due to
+low resolution. This happens because the imagery dataset, which was extracted from GSV, did not keep the original
+quality.
+
 **Generated Files**
+All the generated files are available on the project's repository or, in the case of the segmented images (1 per LSOA), in a linked
+Google Drive folder.
 
 File            |  Description
 :-------------------------:|:-------------------------:
 [total_stats.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/total_stats.json) |  Total Number of Pixels per Cityscapes Label in GSV Dataset.
 [rgb_label.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/rgb_label) |  Conversion from RGB values to a Cityscapes label.
 [pspnet101_lsoa](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing) |  Folder with 1 segmented image per London LSOA.
+
+**Future Directions**
+1. Analysing segmented images road by road;
+2. Having a higher resolution London imagery dataset with better coverage from all Greater London territory;
+3. Link image segmentation analysis with the objects detected using YOLOv5;
+4. Although this would not represent a significant improvement, using a more precise pre-trained model like Xception71
+available in [TensorFlow DeepLab Model Zoo](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md) would
+increase the quality of the segmented images.
 
 ### Supervisors
 [Majid Ezzati](https://www.imperial.ac.uk/people/majid.ezzati) (Imperial College London) | [Ricky Nathvani](https://www.imperial.ac.uk/people/r.nathvani) (Imperial College London)
