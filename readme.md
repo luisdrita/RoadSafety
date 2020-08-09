@@ -1,4 +1,4 @@
-# Road Safety for Cyclists in London
+# Using Deep Learning to Identify Cyclists Risk Factors in London
 [Jupyter Notebook](https://github.com/warcraft12321/RoadSafety/blob/master/main.ipynb) | [Report](https://github.com/warcraft12321/RoadSafety/blob/master/text/report.pdf) | [Presentation](https://github.com/warcraft12321/RoadSafety/blob/master/text/presentation.pdf)
 
 ### Aim
@@ -16,7 +16,13 @@ Both YOLOv5 and PSPNet101 were benchmarked and validated using a set of 1 image 
 Data was storaged and processed in the secure High Performance Cluster from Imperial College London.
 
 ### GSV Dataset
-#### Stats
+
+**Description**
+
+Along this project, it was used a Google StreetView imagery dataset from Greater London. It includes, approximately,
+1/2 million images distributed across all LSOAs. For each data point there are 4 images ranging from 0º to 360º. These
+images were previously pre-processed (not as part of this project) to guarantee uniformity across them. More details
+are provided below.
 
 **Number of images per LSOA in Greater London**
 
@@ -26,38 +32,46 @@ Data was storaged and processed in the secure High Performance Cluster from Impe
 
 ![](./img/dataset/images_distribution.png)
 
-**360 degrees compiled images** (img_id = 23052)
+**Example of data point with 4 images covering 360º angle**
 
 ![](./img/dataset/gsv_img_angles.png)
+
+img_id = 23052
+
+**Statistics on the number of available images per LSOA in the dataset**
 
 Minimum | Maximum | Mean | Standard Deviation | Mode | Median
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 1 | 211 | 27 | 24 | 25 | 11
 
+**Total number of available images**
+
 Number Images in GSV Dataset | Number of LSOA identified Images (image_labels.csv) | Number of Non-Repeated LSOA identified Images (image_labels.csv) | Number of Image Identified LSOAs (image_labels.csv)
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 518 350 | 512 812 | 478 724 | 4832
 
-#### Files
+**Generated files**
 
 File            |  Description
 :-------------------------:|:-------------------------:
-[imgId_lsoa.json](https://github.com/warcraft12321/RoadSafety/blob/master/imgId_lsoa.json) |  File converting image Ids into the LSOAs they belong.
-[lsoa_number_images.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_number_images.json) |  Number of available GSV images per LSOA
+[imgId_lsoa.json](https://github.com/warcraft12321/RoadSafety/blob/master/imgId_lsoa.json) |  File linking image ids to the LSOAs they belong.
+[lsoa_number_images.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_number_images.json) |  Number of available GSV images per LSOA.
 
 ### Object Detection | [YOLOv5](https://github.com/ultralytics/yolov5)
 
-YOLOv5 is the most recent version of YOLO which was originally developed by Joseph Redmon. First version runs in framework
+**Description**
+
+YOLOv5 is the most recent version of YOLO which was originally developed by Joseph Redmon. First version runs in a framework
 called Darknet which was purposely built to execute YOLO.
 
 Version 5 is the 2nd model which was not developed by Joseph Redmon (after version 4) and the first running in the
-state-of-the-art machine learning framework PyTorch.
+state-of-the-art machine learning framework, in this case, PyTorch.
 
 This model was pre-trained using Coco dataset. Thus, it is able to identify 80 object categories. Distributed
 over 11 categories.
 
 <details>
-  <summary>COCO Categories</summary>
+  <summary>Full list of MS Coco categories</summary>
 
 Person | Vehicle | Outdoor | Animal | Accessory | Sports | Kitchen | Food | Furniture | Electronic | Appliance | Indoor
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -81,15 +95,15 @@ Person | Bicycle | Traffic Light | Bird | Backpack | Frisbee | Bottle | Banana |
 
 </details>
 
-**YOLOv5 in Static Image from London**
+**YOLOv5 executed in a static image from the dataset**
 
 ![](./img/yolov5/YOLOv5.png)
 
-**YOLOv5 in Real-Time in London**
+**YOLOv5 executed in real-time in a video from London**
 
 [![YOLOv5 | London](http://img.youtube.com/vi/ncwcWl-zOws/0.jpg)](http://www.youtube.com/watch?v=ncwcWl-zOws "YOLOv5 | London")
 
-#### Stats
+**Number of detections to the top 15 most common objects**
 
 Object            |  Number Detections* | Object            |  Number Detections* | Object            |  Number Detections*
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -100,6 +114,8 @@ Potted Plant  |  37 917 | Bench  |  5013 | Stop Sign  |  1282
 Bus  |  11 512 | Clock  |  2750 | Fire Hydrant  |  1168
 
 \* >= 0.5 YOLOv5 score
+
+**LSOA objects distribution in Greater London**
 
 Bicycle (&#8593;)          |  Bus (&#8595;)
 :-------------------------:|:-------------------------:
@@ -121,31 +137,27 @@ Train (&#8595;) | Truck (&#8595;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/train.png)  | ![](./img/yolov5/lsoas/truck.png)
 
-#### Cyclists Road Safety
+\* &#8593; and &#8595; were positively and negatively associated to road safety, respectively.
+
+** Combining some of the previous risk factors **
 
 Pedestrians and Cyclists in Greater London (average number per image) (&#8593;)          |  Traffic (buses, cars and trucks) in Greater London (average number per image) (&#8595;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/normalized_pedestrians_score.png)  |  ![](./img/yolov5/normalized_traffic_score.png)
 
+**Combination of the 2 previous LSOAs**
+
 ![](./img/yolov5/normalized_safety_score.png)
 
-Object            |  Number Occurrences | Object            |  Number Occurrences | Object            |  Number Occurrences
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Car  |  1 509 344 | Bicycle  |  10 894 | Chair  |  2191
-Person  |  107 266 | Motorcycle  |  8970 | Handbag  |  2090
-Truck  |  70 083 | Traffic Light  |  6310 | Backpack  |  1939
-Potted Plant  |  37 917 | Bench  |  5013 | Stop Sign  |  1282
-Bus  |  11 512 | Clock  |  2750 | Fire Hydrant  |  1168
+**Top 15 detected objects correlation matrix**
 
-**Correlation Matrix**
+![](./img/yolov5/correlation_matrix_p_values.png)
 
-![](./img/yolov5/correlation_matrix2.png)
-
-**Detected Objects Distribution**
+**Top 15 detected objects distribution**
 
 ![](./img/yolov5/object_detection_distribution.png)
 
-Image
+**Detailed object detection information for all categories in MS Coco, present in the GSV imagery**
 
 <details>
   <summary>COCO Objects Stats for all LSOAs</summary>
@@ -236,10 +248,7 @@ Total | 1 785 642 | 0 | 1891 | 370
 
 </details>
 
-Number LSOAs = 4832
-Number Object Detected Images = 458253
-
-#### Files
+**Generated Files**
 
 File            |  Description
 :-------------------------:|:-------------------------:
@@ -249,9 +258,12 @@ File            |  Description
 [lsoa_objects_number_average_per_image.csv](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.csv) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). CSV format.
 [yolov5_lsoa](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing) |  1 image per London LSOA with the detected objects identified.
 
-#### Extras
+**Future Directions**
 
-GSV YOLOv5 Method Testing
+Analysis of a significant set of GSV images in London unveiled meaningful LSOA level patterns. One is the
+airplane distribution in the areas closer to the 2 airports in Greater London. Second, the presence of potted plants
+was found to be more significant around the biggest parks.
+This shows the potential of GSV imagery analysis is not limited to assess road safety.
 
 Airplane | Potted Plant
 :-------------------------:|:-------------------------:
@@ -263,6 +275,8 @@ Correlations | Top Misclassification
 
 ### Image Segmentation | [PSPNet101](https://github.com/hellochick/PSPNet-tensorflow)
 
+**Description**
+
 Image segmentation models reached a precision plateau (in terms of average IoU) in the previous 2 years. Due to their
 long execution times, it was chosen the model executing faster and with the higher precision.
 
@@ -270,7 +284,8 @@ PSPNet101 was pre-trained in Cityscapes dataset. This way, it was able to label 
 categories.
 
 <details>
-  <summary>Cityscapes Categories</summary>
+
+  <summary>Full list of Cityscapes categories</summary>
 
 Void | Flat | Construction | Object | Nature | Sky | Human | Vehicle
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -286,14 +301,13 @@ Ground |  |  |  |  |  |  | Motorcycle
 
 </details>
 
+**Example of a segmented image with identified labels included**
 ![](./img/pspnet101/PSPNet101.png)
 
-#### Stats
-
-**Segmented Images Distribution**
+**Segmented images distribution by number of pixels**
 ![](./img/pspnet101/image_segmentation_distribution2.png)
 
-Number Segmented Images = 468186
+**Number of labeled pixels for the top 20 most common categories**
 
 Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels | Pixel Label            |  Number Pixels
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -303,7 +317,7 @@ Road  |  38 235 843 337 | Terrain  |  1 787 689 493 | Bicycle  |  95 469 333 | T
 Vegetation  |  30 977 112 560 | Wall  |  765 524 909 | Truck  |  91 256 316 | Train | 6 842 318
 Car  |  9 830 297 990 | Pole  |  303 407 190 | Bus  |  81 476 810 | |
 
-#### Files
+**Generated Files**
 
 File            |  Description
 :-------------------------:|:-------------------------:
