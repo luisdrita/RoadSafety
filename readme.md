@@ -114,7 +114,7 @@ Bus  |  11 512 | Clock  |  2750 | Fire Hydrant  |  1168
 
 Bicycle LSOA (&#8593;)          |  Bicycle Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/bicycle.png)  |  ![](./img/yolov5/lsoas_histograms/bus.png)
+![](./img/yolov5/lsoas/bicycle.png)  |  ![](./img/yolov5/lsoas_histograms/bicycle.png)
 
 Bus LSOA (&#8595;)         |  Bus Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
@@ -122,7 +122,7 @@ Bus LSOA (&#8595;)         |  Bus Distribution Histogram (&#8595;)
 
 Car LSOA (&#8595;) | Car Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/car.png)  |  ![](./img/yolov5/lsoas_histograms/motorcycle.png)
+![](./img/yolov5/lsoas/car.png)  |  ![](./img/yolov5/lsoas_histograms/car.png)
 
 Motorcycle LSOA (&#8595;) | Motorcycle Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
@@ -130,7 +130,7 @@ Motorcycle LSOA (&#8595;) | Motorcycle Distribution Histogram (&#8595;)
 
 Parking Meter LSOA (&#8595;) | Parking Meter Distribution Histogram (&#8593;)
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/parking_meter.png)  |  ![](./img/yolov5/lsoas_histograms/person.png)
+![](./img/yolov5/lsoas/parking_meter.png)  |  ![](./img/yolov5/lsoas_histograms/parking_meter.png)
 
 Person LSOA (&#8593;) | Person Distribution Histogram (&#8593;)
 :-------------------------:|:-------------------------:
@@ -138,7 +138,7 @@ Person LSOA (&#8593;) | Person Distribution Histogram (&#8593;)
 
 Stop Sign LSOA (&#8593;) | Traffic Light Distribution Histogram (&#8593;)
 :-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/stop_sign.png)  | ![](./img/yolov5/lsoas_histograms/traffic_light.png)
+![](./img/yolov5/lsoas/stop_sign.png)  | ![](./img/yolov5/lsoas_histograms/stop_sign.png)
 
 Traffic Light LSOA (&#8593;) | Traffic Light Distribution Histogram (&#8593;)
 :-------------------------:|:-------------------------:
