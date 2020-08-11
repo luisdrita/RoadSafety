@@ -28,19 +28,19 @@ are provided below.
 
 Knowing the number of available images per LSOA allows us to normalize the objects counting in each area.
 
-![](./img/dataset/number_images.png)
+![](./img/imagery_dataset/number_images.png)
 
 **Distribution by latitude and longitude of all image locations**
 
 There is an higher density of GSV images in Central London.
 
-![](./img/dataset/images_distribution.png)
+![](./img/imagery_dataset/images_distribution.png)
 
 **Example of data point with 4 images covering 360º angle**
 
 Each image per data point covers a 90º degrees angle.
 
-![](./img/dataset/gsv_img_angles.png)
+![](./img/imagery_dataset/gsv_img_angles.png)
 
 img_id = 23052
 
@@ -69,6 +69,7 @@ File            |  Description
 :-------------------------:|:-------------------------:
 [imgId_lsoa.json](https://github.com/warcraft12321/RoadSafety/blob/master/imgId_lsoa.json) |  File linking image ids to the LSOAs they belong.
 [lsoa_number_images.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_number_images.json) |  Number of available GSV images per LSOA.
+[london_shapefiles](https://github.com/warcraft12321/RoadSafety/blob/master/london_shapefiles) |  Collection of shapefiles of London OAs, MSOAs and LSOAs.
 
 ### Object Detection | [YOLOv5](https://github.com/ultralytics/yolov5)
 
