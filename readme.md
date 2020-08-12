@@ -316,6 +316,7 @@ File            |  Description
 [lsoa_objects_number_average_per_image.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.json) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). JSON format.
 [lsoa_objects_number_average_per_image.csv](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.csv) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). CSV format.
 [yolov5_lsoa](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing) |  1 image per London LSOA with the detected objects identified.
+[img_ids_clock.txt](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/img_ids_clock.txt) |  List of all image IDs in GSV imagery dataset where clocks were detected.
 
 **YOLOv5 limitations**
 
