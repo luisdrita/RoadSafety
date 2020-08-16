@@ -63,12 +63,12 @@ Number Images in GSV Dataset | Number of LSOA identified Images (image_labels.cs
 
 **Generated files**
 
-All the generated files are available in the project's repository.
+GSV generated files are available in this project's repository.
 
 File            |  Description
 :-------------------------:|:-------------------------:
-[imgId_lsoa.json](https://github.com/warcraft12321/RoadSafety/blob/master/imgId_lsoa.json) |  File linking image ids to the LSOAs they belong.
-[lsoa_number_images.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_number_images.json) |  Number of available GSV images per LSOA.
+[imgId_lsoa.json](https://github.com/warcraft12321/RoadSafety/blob/master/imgId_lsoa.json) |  File converting GSV image ids into the London LSOAs they belong.
+[lsoa_number_images.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_number_images.json) |  Number of GSV images for each London LSOA.
 [london_shapefiles](https://github.com/warcraft12321/RoadSafety/blob/master/london_shapefiles) |  Collection of shapefiles of London OAs, MSOAs and LSOAs.
 
 ### Object Detection | [YOLOv5](https://github.com/ultralytics/yolov5)
@@ -315,7 +315,7 @@ File            |  Description
 [lsoa_objects_number.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number.json) |  Number of objects detected by YOLOv5 in GSV imagery by class and LSOA.
 [lsoa_objects_number_average_per_image.json](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.json) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). JSON format.
 [lsoa_objects_number_average_per_image.csv](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.csv) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). CSV format.
-[yolov5_lsoa](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing) |  1 image per London LSOA with the detected objects identified.
+[yolov5_lsoa](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing) |  Folder with 1 processed image per LSOA.
 [img_ids_clock.txt](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/img_ids_clock.txt) |  List of all image IDs in GSV imagery dataset where clocks were detected.
 
 **YOLOv5 limitations**
@@ -392,7 +392,7 @@ Building  |  47 394 852 284 | Sidewalk  |  2 772 560 820 | Motorcycle  |  299 50
 Sky  |  38 423 367 965 | Fence  |  2 177 733 764 | Person  |  232 309 236 | Rider | 13 948 361
 Road  |  38 235 843 337 | Terrain  |  1 787 689 493 | Bicycle  |  95 469 333 | Traffic Light | 12 472 659
 Vegetation  |  30 977 112 560 | Wall  |  765 524 909 | Truck  |  91 256 316 | Train | 6 842 318
-Car  |  9 830 297 990 | Pole  |  303 407 190 | Bus  |  81 476 810 | |
+Car  |  9 830 297 990 | Pole  |  303 407 190 | Bus  |  81 476 810 | Total | 173 559 808 323
 
 **PSPNet101 limitations**
 
@@ -411,9 +411,9 @@ Google Drive folder.
 
 File            |  Description
 :-------------------------:|:-------------------------:
-[total_stats.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/total_stats.json) |  Total Number of Pixels per Cityscapes Label in GSV Dataset.
-[rgb_label.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/rgb_label) |  Conversion from RGB values to a Cityscapes label.
-[pspnet101_lsoa](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing) |  Folder with 1 segmented image per London LSOA.
+[total_stats.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/total_stats.json) |  Total number of pixels for each Cityscapes label in the GSV dataset.
+[rgb_label.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/rgb_label) |  Conversion from RGB values to the respective cityscapes label.
+[pspnet101_lsoa](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing) |  Folder with 1 segmented image per LSOA.
 
 **Future Directions**
 
