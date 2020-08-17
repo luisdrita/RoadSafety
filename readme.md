@@ -5,7 +5,7 @@
 
   * [Aim](#Aim)
   * [GSV Dataset](#GSV-Dataset)
-  * [Object Detection | YOLOv5](#Object Detection-|-YOLOv5)
+  * [Object Detection | YOLOv5](#Object Detection-|-[YOLOv5](https://github.com/ultralytics/yolov5))
         * [OR using Pathogen:](#or-using-pathogen)
         * [OR using Vundle:](#or-using-vundle)
   * [Image Segmentation | PSPNet101](#Image Segmentation-|-PSPNet101)
