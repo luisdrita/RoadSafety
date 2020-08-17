@@ -4,12 +4,12 @@
 ### Table of Contents
 
   * [Aim](#Aim)
-  * [GSV Dataset](###GSV-Dataset)
-        * [Description](####Description)
-  * [Object Detection | YOLOv5](#Object Detection-|-[YOLOv5](https://github.com/ultralytics/yolov5))
+  * [GSV Dataset](#GSV-Dataset)
+        * [Description](#Description)
+  * [Object Detection | YOLOv5](#object-detection--yolov5)
         * [OR using Pathogen:](#or-using-pathogen)
         * [OR using Vundle:](#or-using-vundle)
-  * [Image Segmentation | PSPNet101](#Image Segmentation-|-PSPNet101)
+  * [Image Segmentation | PSPNet101](#image-segmentation--pspnet101)
 
 ### Aim
 
