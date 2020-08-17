@@ -1,6 +1,16 @@
 # Using Deep Learning to Identify Cyclists Risk Factors in London
 [Jupyter Notebook](https://github.com/warcraft12321/RoadSafety/blob/master/main.ipynb) | [Report](https://github.com/warcraft12321/RoadSafety/blob/master/text/report.pdf) | [Presentation](https://github.com/warcraft12321/RoadSafety/blob/master/text/presentation.pdf)
 
+Table of Contents
+=================
+
+  * [Dockerfile.vim](#Aim)
+  * [Screenshot](#GSV Dataset)
+  * [Installation](#Object Detection | YOLOv5)
+        * [OR using Pathogen:](#or-using-pathogen)
+        * [OR using Vundle:](#or-using-vundle)
+  * [License](#license)
+
 ### Aim
 
 The aim of this project was to use imagery to estimate safety on the roads of London, from a cyclist’s perspective. After
