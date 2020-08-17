@@ -5,7 +5,7 @@ Table of Contents
 =================
 
   * [Aim](#Aim)
-  * [Screenshot](#GSV\sDataset)
+  * [Screenshot](#GSV-Dataset)
   * [Installation](#Object Detection | YOLOv5)
         * [OR using Pathogen:](#or-using-pathogen)
         * [OR using Vundle:](#or-using-vundle)
