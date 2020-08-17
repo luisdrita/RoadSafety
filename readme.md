@@ -26,7 +26,7 @@ Data was storaged and processed in the secure High Performance Cluster from Impe
 
 ### GSV Dataset
 
-**Description**
+#### Description
 
 Along this project, it was used a Google StreetView imagery dataset from Greater London. It includes, approximately,
 1/2 million images distributed across all LSOAs. For each data point there are 4 images ranging from 0º to 360º. These
