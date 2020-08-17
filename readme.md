@@ -4,8 +4,8 @@
 ### Table of Contents
 
   * [Aim](#Aim)
-  * [GSV Dataset](#GSV-Dataset)
-        * [Description:](#Description)
+  * [GSV Dataset](###GSV-Dataset)
+        * [Description](####Description)
   * [Object Detection | YOLOv5](#Object Detection-|-[YOLOv5](https://github.com/ultralytics/yolov5))
         * [OR using Pathogen:](#or-using-pathogen)
         * [OR using Vundle:](#or-using-vundle)
