@@ -169,7 +169,7 @@ Bus  |  11 512 | Clock  |  2750 | Fire Hydrant  |  1168
 
 List of the most relevant objects distribution by LSOA with the corresponding histograms on the right.
 
-Bicycle LSOA (&#8593;)          |  Bicycle Distribution Histogram (&#8595;)
+Bicycle LSOA (&#8593;)          |  Bicycle Distribution Histogram (&#8593;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/bicycle.png)  |  ![](./img/yolov5/lsoas_histograms/bicycle.png)
 
@@ -181,7 +181,7 @@ Car LSOA (&#8595;) | Car Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/car.png)  |  ![](./img/yolov5/lsoas_histograms/car.png)
 
-Parking Meter LSOA (&#8595;) | Parking Meter Distribution Histogram (&#8593;)
+Parking Meter LSOA (&#8595;) | Parking Meter Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/parking_meter.png)  |  ![](./img/yolov5/lsoas_histograms/parking_meter.png)
 
