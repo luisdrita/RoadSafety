@@ -4,8 +4,8 @@
 Table of Contents
 =================
 
-  * [Dockerfile.vim](#Aim)
-  * [Screenshot](#GSV Dataset)
+  * [Aim](#Aim)
+  * [Screenshot](#GSV\sDataset)
   * [Installation](#Object Detection | YOLOv5)
         * [OR using Pathogen:](#or-using-pathogen)
         * [OR using Vundle:](#or-using-vundle)
