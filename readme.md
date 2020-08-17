@@ -24,8 +24,8 @@
     * [GIF representation of the 2 most correlated objects](#gif-representation-of-the-2-most-correlated-objects)
     * [Top 15 detected objects distribution](#top-15-detected-objects-distribution)
     * [Detailed object detection information for all categories in MS Coco, present in the GSV imagery](#detailed-object-detection-information-for-all-categories-in-ms-coco-present-in-the-gsv-imagery)
-    * [Generated Files](#generated-files-1)
     * [YOLOv5 limitations](#yolov5-limitations)
+    * [Generated Files](#generated-files-1)
     * [Future Directions](#future-directions)
 * [Image Segmentation | PSPNet101](#image-segmentation--pspnet101)
     * [Description](#description-2)
@@ -167,7 +167,7 @@ Bus  |  11 512 | Clock  |  2750 | Fire Hydrant  |  1168
 
 #### LSOA objects distribution in Greater London
 
-Full list of the most relevant objects distribution by LSOA with the corresponding histograms on the right side.
+List of the most relevant objects distribution by LSOA with the corresponding histograms on the right.
 
 Bicycle LSOA (&#8593;)          |  Bicycle Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
@@ -180,10 +180,6 @@ Bus LSOA (&#8595;)         |  Bus Distribution Histogram (&#8595;)
 Car LSOA (&#8595;) | Car Distribution Histogram (&#8595;)
 :-------------------------:|:-------------------------:
 ![](./img/yolov5/lsoas/car.png)  |  ![](./img/yolov5/lsoas_histograms/car.png)
-
-Motorcycle LSOA (&#8595;) | Motorcycle Distribution Histogram (&#8595;)
-:-------------------------:|:-------------------------:
-![](./img/yolov5/lsoas/motorcycle.png)  |  ![](./img/yolov5/lsoas_histograms/motorcycle.png)
 
 Parking Meter LSOA (&#8595;) | Parking Meter Distribution Histogram (&#8593;)
 :-------------------------:|:-------------------------:
@@ -339,6 +335,16 @@ Total | 1 785 642 | 0 | 1891 | 370
 
 </details>
 
+#### YOLOv5 limitations
+
+For all road objects we intended to identify, the accuracy rates were very high, with very few misclassifications due to the high detection threshold (0.5) it was set.
+For this reason, the number of detected objects in the image is likely to be higher than the detected one.
+In terms of other objects, satellite dishes were often misclassified as clocks. There is a strong resemblance in frontal images between
+clock pointers and dishes arms. Boats were wrongly classified as construction containers due to their shape. Fences as benches presumably due to their texture. And
+Streetlights as kites and frisbees, possible because they have similar backgrounds - sky.
+
+![](./img/yolov5/misclassifications.png)
+
 #### Generated Files
 
 All the generated files are available on the project's repository or, in the case of the object detected images (1 per LSOA), in a linked
@@ -352,16 +358,6 @@ File            |  Description
 [lsoa_objects_number_average_per_image.csv](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/lsoa_objects_number_average_per_image.csv) |  Average number of objects detected by YOLOv5 in GSV imagery per image (includes all classes and LSOAs). CSV format.
 [yolov5_lsoa](https://drive.google.com/drive/folders/1G-EdZtO3bqRzG-OqnumDWjP08yihJ05q?usp=sharing) |  Folder with 1 processed image per LSOA.
 [img_ids_clock.txt](https://github.com/warcraft12321/RoadSafety/blob/master/yolov5/img_ids_clock.txt) |  List of all image IDs in GSV imagery dataset where clocks were detected.
-
-#### YOLOv5 limitations
-
-For all road objects we intended to identify, the accuracy rates were very high, with very few misclassifications due to the high detection threshold (0.5) it was set.
-For this reason, the number of detected objects in the image is likely to be higher than the detected one.
-In terms of other objects, satellite dishes were often misclassified as clocks. There is a strong resemblance in frontal images between
-clock pointers and dishes arms. Boats were wrongly classified as construction containers due to their shape. Fences as benches presumably due to their texture. And
-Streetlights as kites and frisbees, possible because they have similar backgrounds - sky.
-
-![](./img/yolov5/misclassifications.png)
 
 #### Future Directions
 
@@ -447,7 +443,7 @@ Google Drive folder.
 File            |  Description
 :-------------------------:|:-------------------------:
 [total_stats.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/total_stats.json) |  Total number of pixels for each Cityscapes label in the GSV dataset.
-[rgb_label.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/rgb_label) |  Conversion from RGB values to the respective cityscapes label.
+[rgb_label.json](https://github.com/warcraft12321/RoadSafety/blob/master/pspnet101/rgb_label) |  Conversion from RGB values to the respective Cityscapes label.
 [pspnet101_lsoa](https://drive.google.com/drive/folders/1fel8ew7h2eNJRMkXpv9lF4Zl1pydo4h-?usp=sharing) |  Folder with 1 segmented image per LSOA.
 
 #### Future Directions
